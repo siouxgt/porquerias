@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Catálogo URGs Ver más</title>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link href="catalogos.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+
+
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+<body>
+	<header class="top">
+		<div class="row">
+			<div class="logos col-12 col-sm-12 col-lg-6 justify-content-around">
+				<img class="cdmx" src="img/logoSAFtianguis_Mesa de trabajo 1.svg" alt="Logo" />
+			</div>
+			<div class="iconos col-12 col-sm-12 col-lg-6 justify-content-center">
+				<div class="Hd-buscar">
+					<span>
+						<form>
+							<input type="input" class="form__field" placeholder="ID o Contrato" name="name" id="search"
+								required />
+						</form>
+						<img class="Hd-buscar" src="iconos/search_off.svg" alt="" />
+					</span>
+				</div>
+
+				<div class="Hd-alerta">
+					<span>
+						<div class="alerta-mensajes">
+							<ul class="alerta-mensajes">
+								<li><img class="Hd-alerta" src="iconos/alert_on.svg" alt="" />
+
+									<ul>
+										<li class="abre-modal" id="tareas"><i class="fa fa-check-circle alerta-icono "
+												aria-hidden="true"></i>Tareas
+											<span>12</span>
+										</li>
+										<!-- <li class="abre-modal" id="alertas"><i class="fa fa-bell alerta-icono"
+												aria-hidden="true"></i>Alertas <span>9</span>
+										</li> -->
+										<li class="abre-modal" id="mensajes"><i class="fa fa-comment alerta-icono"
+												aria-hidden="true"></i>Mensajes<span>3</span></li>
+									</ul>
+
+								</li>
+							</ul>
+						</div>
+						<p>7</p>
+					</span>
+				</div>
+
+				<div class="dropdown">
+					<span>
+						<h2 class="perfil">DN</h2>
+					</span>
+					<div class="dropdown-content alerta-mensajes">
+						<ul class="id">
+							<li><img src="img/btnFlechaDer_Mesa de trabajo 1.svg" alt="salir" class="abre-modal m-2"
+									style="width:40%"></li>
+							<li><img src="img/id_guinda_Mesa de trabajo 1.svg" alt="ID" class="abre-modal m-2"
+									style="width:40%"></li>
+							<li><img src="img/folderInfo_Mesa de trabajo 1.svg" alt="Info" class="abre-modal m-2"
+									style="width:40%"></li>
+							<li><img src="img/saberMas_Mesa de trabajo 1.svg" alt="Saber más" class="abre-modal m-2"
+									style="width:40%"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center">
+		<div class=" container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="nav nav-item"><span class="nav-active"><a href="administrador_inicio.html">Inicio</a></span>
+				</div>
+				<div class="collapse " id="collapseExample">
+				</div>
+				<div class="dropdown">
+					<a href="#" class="underline">Catálogos <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<li class="dropdown">
+							<a href="proveedores.html" class="dropdown">Proveedores
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown">Productos
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="urgs.html" class="dropdown">URGs
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown">Validación técnica
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="nav nav-item"><a href="#" class="underline">Convenio Marco</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Órdenes de Compra</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Permisos</a></div>
+				<div class="dropdown">
+					<a href="#" class="underline">Reportes <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<li class="dropdown">
+							<a href="#" class="dropdown">Histórico de precios
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown">Reportes
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="dropdown nav-item">
+					<a href="#" class="underline">Recursos <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<li class="dropdown">
+							<a href="#" class="dropdown">Perfil
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown">Centro de ayuda
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown">Documentos
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main class="m-3">
+		<h1 class="m-2 p-3">Unidades Responsables de Gasto (URG)</h1>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+				<li class="breadcrumb-item"><a href="#">Catálogos</a></li>
+				<li class="breadcrumb-item active" aria-current="page">URGs</li>
+			</ol>
+		</nav>
+	</main>
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item reg" role="presentation">
+					<button class="nav-link" id="home-tab" data-toggle="tab" data-target="#home" type="button"
+						role="tab" aria-controls="home" aria-selected="true">
+						<a href="urgs.html" class="back">
+							<span>Regresar</span>
+						</a>
+					</button>
+				</li>
+				<li class="nav-item" role="presentation">
+					<button class="nav-link active hoverTab " id="profile-tab" data-toggle="tab" data-target="#profile"
+						type="button" role="tab" aria-controls="profile" aria-selected="false">
+						<span class="tabText">Catálogo</span>
+					</button>
+				</li>
+
+
+				<li class="nav-item" role="presentation">
+					<button class="nav-link hoverTab" id="other-tab" data-toggle="tab" data-target="#messages"
+						type="button" role="tab" aria-controls="messages" aria-selected="false">
+						Términos específicos</button>
+				</li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+				<div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div style="overflow-x: auto;" class="px-5 pt-4 mx-2">
+									<table>
+										<tr>
+											<th class="derecha">
+												<strong>Clave</strong>
+											</th>
+											<td class="izquierda">
+												01CD03
+											</td>
+										</tr>
+										<tr>
+											<th class="derecha">
+												<strong>URG</strong>
+											</th>
+											<td class="izquierda">
+												CENTRO DE COMANDO, CONTROL, CÓMPUTO, COMUNICACIONES Y CONTACTO CIUDADANO
+											</td>
+										</tr>
+										<tr>
+											<th class="derecha">
+												<strong>Tipo URG</strong>
+											</th>
+											<td class="izquierda">
+												ÓRGANO DESCONCENTRADO
+											</td>
+										</tr>
+										<tr>
+											<th class="derecha">
+												<strong>Dirección URG</strong>
+											</th>
+											<td class="izquierda">
+												CECILIO ROBELO 3, EL PARQUE, VENUSTIANO CARRANZA15960 CIUDAD DE MÉXICO,
+												CDMX
+											</td>
+										</tr>
+										<tr class="mb-5">
+											<th class="derecha">
+												<strong>Estatus</strong>
+											</th>
+											<td class="izquierda">
+												ACTIVO
+											</td>
+										</tr>
+									</table>
+									<hr>
+									<table>
+										<tr>
+											<th class="derecha">
+												<strong>Responsable URG 1</strong>
+											</th>
+											<td class="izquierda">
+												GUSTAVO MONDRAGON VARGAS
+											</td>
+										</tr>
+										<tr>
+											<th class="derecha">
+												<strong>Cargo</strong>
+											</th>
+											<td class="izquierda">
+												J.U.D. DE PLANEACION
+											</td>
+										</tr>
+										<tr>
+											<th class="derecha">
+												<strong>Permisos</strong>
+											</th>
+											<td class="izquierda">
+												Edición
+											</td>
+										</tr>
+									</table>
+									<hr>
+									<table>
+										<tr>
+											<th class="derecha">
+												<strong>Fecha de Adhesión</strong>
+											</th>
+											<td class="izquierda">
+												dd-mm-aaaa
+											</td>
+										</tr>
+										<tr>
+											<th class="derecha">
+												<strong>Acuerdo Adhesión</strong>
+											</th>
+											<td class="izquierda">
+												<a href="#">
+													<a href="#" class="adhesion"></a>
+												</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages">
+					<!-- <article id="tab3"> -->
+					<div class="container fluid justify-content-center ">
+						<div class="row">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a role="button" data-toggle="collapse" data-parent="#accordion"
+												href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												PAPELERIA
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+										aria-labelledby="headingOne">
+										<table>
+
+											<tr>
+												<th class="derecha">
+													<strong>Clave</strong>
+												</th>
+												<td class="izquierda">
+													01CD03
+												</td>
+											</tr>
+											<tr>
+												<th class="derecha">
+													<strong>URG</strong>
+												</th>
+												<td class="izquierda">
+													CENTRO DE COMANDO, CONTROL, CÓMPUTO, COMUNICACIONES Y CONTACTO
+													CIUDADANO
+												</td>
+											</tr>
+											<tr>
+												<th class="derecha">
+													<strong>Estatus</strong>
+												</th>
+												<td class="izquierda">
+													ACTIVO
+												</td>
+											</tr>
+
+
+											<tr>
+												<th class="derecha">
+													<strong>Permisos</strong>
+												</th>
+												<td class="izquierda">
+													Edición
+												</td>
+											</tr>
+
+											<tr>
+												<th class="derecha">
+													<strong>Fecha de Adhesión</strong>
+												</th>
+												<td class="izquierda">
+													dd-mm-aaaa
+												</td>
+											</tr>
+											<tr>
+												<th class="derecha">
+													<strong>Acuerdo Adhesión</strong>
+												</th>
+												<td class="izquierda">
+													<a href="#">
+														<span class="material-symbols-outlined">
+															file_download
+														</span>
+													</a>
+												</td>
+											</tr>
+										</table>
+										<!-- <div class="panel-body">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+									raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								  </div> -->
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+											<a class="collapsed" role="button" data-toggle="collapse"
+												data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+												aria-controls="collapseTwo">
+												DIPLOMA
+											</a>
+										</h4>
+									</div>
+									<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+										aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<!-- Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+									on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+									raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. -->
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<!-- </article> -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- footer -->
+	<footer>
+		<!-- Footer -->
+		<div class="row ft-leyenda">
+			<ul class="ft-leyenda-list text-decoration-none">
+				<li>
+					<img src="images/lg_cdmx_footer.svg" alt="" />
+				</li>
+				<li>
+					Diseñado y operado por la Secretaría de Administración y Finanzas
+					<br>
+					Cualquier duda y/o problema relacionado con el sitio, favor de contactarnos a través de <a
+						href="mailto:name@email.com">mesadeservicio@finanzas.cdmx.gob.mx</a>
+					<br>
+					Se brindará atención telefónica de Lunes a Viernes en el teléfono <strong>(55) 5723 6505 ext. 5026,
+						5004, 5070</strong>
+				</li>
+			</ul>
+		</div>
+
+
+		<!-- Footer legal -->
+		<div class="row ft-legal">
+			<ul class="ft-legal-list text-decoration-none">
+				<li><a href="#">Términos y condiciones</a></li>
+				<li><a href="#">Política de privacidad</a></li>
+				<li>2022 Gobierno de la CDMX</li>
+			</ul>
+		</div>
+
+	</footer>
+	<!-- footer -->
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#example1').DataTable();
+			$('#example2').DataTable();
+			$('#example3').DataTable();
+
+			$('#tareas').on('click', function () {
+				$('#exampleModal').modal('show');
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example1-div").css('display', 'block');
+
+			});
+
+			$('#alertas').on('click', function () {
+				$('#exampleModal').modal('show');
+				$("#example1-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example2-div").css('display', 'block');
+
+			});
+			$('#mensajes').on('click', function () {
+				$('#exampleModal').modal('show');
+				$("#example1-div").css('display', 'none');
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'block');
+
+			});
+
+			$('#tareas-modal').on('click', function () {
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example1-div").css('display', 'block');
+
+			});
+
+			$('#alertas-modal').on('click', function () {
+
+				$('#exampleModal').modal('show');
+				$("#example1-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example2-div").css('display', 'block');
+
+			});
+			$('#mensajes-modal').on('click', function () {
+				$("#example1-div").css('display', 'none');
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'block');
+
+			});
+
+		});
+
+		$('ul.tabs li a:first').addClass('active');
+		$('.secciones article').hide();
+		$('.secciones article:first').show();
+
+		$('ul.tabs li a').click(function () {
+			$('ul.tabs li a').removeClass('active');
+			$(this).addClass('active');
+			$('.secciones article').hide();
+
+			var activeTab = $(this).attr('href');
+			$(activeTab).show();
+			return false;
+		});
+
+	</script>
+</body>
+
+</html>

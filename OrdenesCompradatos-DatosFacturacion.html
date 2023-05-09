@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Órdenes de compra 1920-1 Alta del contrato</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="catalogos_1.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+
+<body>
+    <header>
+        <div class="row my-2 px-3">
+            <div class="col-sm-12 col-md-7">
+                <nav class="navbar navbar-light badge-white">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logoSAFtianguis_Mesa de trabajo 1.svg" style="width: 100%;"
+                            alt="Logotipo Secretaria de Finanzas">
+                    </a>
+                </nav>
+            </div>
+
+            <div class="col-md-5 col-sm-12 d-flex align-items-center">
+
+                <div class="col-sm-3 col-md-3 d-flex align-items-center justify-content-center border-right">
+                    <a href=" #"><i class="fa-solid fa-bell iconoHeader sombra text-center"></i></a>
+                    <span class="badge badge-white badge-gris ml-3">0</span>
+                </div>
+
+                <!-- <div class="col-1 vl-3 text-center"></div> -->
+
+                <div class="col-sm-3 col-md-3 text-center border-right">
+                    <a href="#">
+                        <i class="fa-solid fa-user iconoHeader sombra"></i>
+                    </a>
+                </div>
+
+                <!-- <div class="col-1 vl-3 text-center"></div> -->
+
+                <div class="col-sm-3 col-md-3 text-center border-right">
+                    <a href="#"><i class="fa-solid fa-heart car-red"></i></a>
+                </div>
+
+                <!-- <div class="col-1 vl-3 text-center"></div> -->
+
+                <div class="col-sm-3 col-md-3 d-flex align-items-center">
+                    <button class="btn btn-white" type="button" data-toggle="collapse"
+                        data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"
+                        style="background-color: #fff;">
+                        <i class="fa-solid fa-cart-shopping car-red"></i>
+                    </button>
+                    <span class="badge badge-pill badge-light border badge-red ml-3">10</span>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav nav-item"><a href="#" class="nav-active underline">Inicio</a></div>
+                <div class="nav nav-item">
+                    <a href="#" class="underline">Requisiciones</a>
+                </div>
+                <div class="nav nav-item dropdown" style="top: -6px;">
+                    <a href="#" class="underline">Contrato Marco<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdown-content" style="height: auto; width: 200px;">
+
+                        <li class="dropdown col-autp">
+                            <a href="#" class="dropdown underline">Equipo de cómputo
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item ">
+                            <a href="#" class="dropdown underline">Material de limpieza
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item ">
+                            <a href="#" class="dropdown underline">Papeleria
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown nav-item ">
+                            <a href="#" class="dropdown underline">Telefonía celular
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown underline">Vestuario y uniformes
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="nav nav-item"><a href="#" class="underline">Subasta</a></div>
+                <div class="nav nav-item"><a href="#" class="underline">Órdenes de compra</a></div>
+                <div class="nav nav-item"><a href="#" class="underline">Reportes</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-------------------------Nombre----------------------->
+
+
+
+        <div class="row my-5 d-flex justify-content-center">
+            <div class="col-8 text-center">
+                <h1 class="text-1">AZTECA S.A. DE C.V.</h1>
+                <p class="text-14 mb-2">Alta del contrato</p>
+                <a href="#" class="text-goldoc">
+                    <i class="fa-solid fa-arrow-left text-gold"></i>
+                    Regresar
+                </a>
+            </div>
+        </div>
+
+        <!-------------------------Nombre----------------------->
+
+        <hr>
+
+
+
+        <section>
+
+            <div class="main container border rounded col-md-5 col-sm-11">
+
+                <div class="col text-center">
+                    <p class="text-1  m-2">Revisa los siguientes datos. Para problemas técnicos, contacta al administrador.</p>
+                </div>
+                <br>
+                <div class="row justify-content-center mb-3">
+                    <button type="button" class="btn bg-white d-flex align-items-center" data-toggle="modal" data-target="#ProblemasTecnicos">
+                        <i class="fa-solid fa-message text-10"></i>
+                        <p class="text-mensaje ml-2">Problemas técnicos</p>
+                    </button>
+                </div>
+
+                <div class="text-center mb-2">
+                    <p class="text-14 ">Datos de Facturación</p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="progress-1">
+                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-11">4 de 4</p>
+                </div>
+   
+        <div class="form1">
+          
+               <div class="row justify-content-center">
+                    <div class="text-center col-12 col-md-8">
+                        <label for="correo" class="form-label text-2">Razón social</label>
+                        <input type="email" value="" class="text center form-control text-1" placeholder="GOBIERNO DE LA CIUDAD DE MÉXICO" id=""><span class="c-link js-toggleForm text-5">Editar</span>  
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <p class="text-2">RFC</p>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="text-1 px-5"><strong>GDF9712054NA</strong></p>
+                </div>
+                <div class="text-center mt-3">
+                    <p class="text-2">Domicilio fiscal</p>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="text-1 px-5"><strong>PLAZA DE LA CONSTITUCIÓN S/N, CENTRO DE LA CIUDAD DE MÉXICO, 06000</strong></p>
+                </div>
+
+                <div class="text-center mt-3">
+                    <p class="text-2">Método de pago</p>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="text-1 px-5"><strong>PUE</strong> (Pago en una sola exhibición)</p>
+                </div>
+
+                <div class="text-center mt-3">
+                    <p class="text-2">Forma de pago</p>
+                </div>
+                <div class="text-center mb-4">
+                    <p class="text-1 px-5"><strong>TRANSFERENCIA BANCARIA</strong> 
+                </div>
+
+              
+
+                <div class="row justify-content-center">
+                    <div class="text-center col-12 col-md-8">
+                        <label for="correo" class="form-label text-2">Uso del CFDI</label>
+                        <input type="email" value="" class="text center form-control text-1" placeholder="GASTOS EN GENERAL" id=""><span class="c-link js-toggleForm text-5">Editar</span>  
+                    </div>
+                </div>
+
+         
+           </div> 
+       
+
+                <div class="row mb-4 mt-5">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-outline-light-v mt-3 mr-2 float-right" data-toggle="modal"
+                        data-target="#exampleModalPreguntas">
+                        <i class="fa-solid fa-arrow-left text-9"></i> Atras</button>
+                    </div>
+                    <div class="col-6">
+                        <div class="botones">
+                            <a class="btn boton-2 mt-3" href="OrdenesCompradatos-ContratosPDF.html" role="button">
+                                Revisar contrato</a>
+                        </div>
+                    </div>
+                </div>
+               
+
+
+  
+  
+
+        </section>
+        
+
+    </main>
+
+</body>
+
+<!------ Modal carrito ------->
+<!-- <div class="row">
+    <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body"> </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body carrito-compras bg-light border">
+                <h5 class="card-title text-1 float-right mr-3 mt-2">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h5>
+                <div class="cajasElementos">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border bg-white">
+                            <!-- <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p> -->
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-2">FORTEC</p>
+                                    <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                    <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                    <p class="text-1 float-right">Subtotal: <span
+                                            class="font-weight-bold">$1,440.00</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border bg-white">
+                            <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-2">FORTEC</p>
+                                    <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                    <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                    <p class="text-1 float-right">Subtotal: <span
+                                            class="font-weight-bold">$1,440.00</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border bg-white">
+                            <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-2">FORTEC</p>
+                                    <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                    <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                    <p class="text-1 float-right">Subtotal: <span
+                                            class="font-weight-bold">$1,440.00</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border bg-white">
+                            <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p>
+                            <div class="row d-flex align-items-center">
+                                <div class="col-3">
+                                    <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                </div>
+                                <div class="col-9">
+                                    <p class="text-2">FORTEC</p>
+                                    <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                    <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                    <p class="text-1 float-right">Subtotal: <span
+                                            class="font-weight-bold">$1,440.00</span></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light">
+                            <div class="col-12">
+                                <p class="titel-2 float-right">Total: <span class="text-red-precio">$1,440.00</span></p>
+                            </div>
+                            <div class="col-12 m-2 mt-5 rounded bac-red text-center">
+                                <a href="tiendaURGvistaShow.html" class="text-center">
+                                    <p class="text-carrito ">Ver carrito</p>
+                                </a>
+                            </div>
+                            <div class="col-12">
+                                <p class="text-gold text-center">Seguir comprando</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!------ Modal carrito ------->
+
+
+<!-- Modal Selecciona una Requisición-->
+<div class="modal fade" id="exampleModalSelecReq" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalSelecReqLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-light">
+                <h5 class="modal-title text-rojo-titulo" id="exampleModalSelecReqLabel">Selecciona una Requisición</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-3 align-self-center">
+                        <i class="fa-solid fa-triangle-exclamation numValida-rojo ml-5"></i>
+                    </div>
+                    <div class="col-9">
+                        <p class="text-1">
+                            Este producto aparece en distintas requisiciones.
+                            Para registrar el producto, selecciona una.
+                        </p>
+                        <p class="mt-3">
+                        <form class="form-inline">
+                            <legend class="col-form-label text-3 font-weight-bold col-5">ID Requisición</legend>
+                            <select class="form-control col-7">
+                                <option>1920 - Adquisición de papelería para</option>
+                            </select>
+                        </form>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn boton-1">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Selecciona una Requisición-->
+
+<!-- ---------ModalProblemasTecnicos--------- -->
+<div class="modal fade" id="ProblemasTecnicos" tabindex="-1" role="dialog" aria-labelledby="ProblemasTecnicosLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" id="ProblemasTecnicosLabel"><samp class="text-mensaje">Problema técnico</samp></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1 text-1">Tipo de problema</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Selecciona una opción</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1 text-1">Describe la situación</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe aquí" rows="3"></textarea>
+              </div>
+          </form>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn boton-12">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ---------ModalProblemasTecnicos--------- -->
+
+<!-- ModalAgregarPersona -->
+<div class="modal fade" id="AgregarPersona" tabindex="-1" role="dialog" aria-labelledby="AgregarPersonaLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" id="AgregarPersonaLabel"><samp class="text-mensaje">Dirección General de Administración y Finanzas u Homólogo</samp></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="inputAddress2">Busca RFC</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="GAMN0008074V5">
+                  </div>
+
+                  <fieldset disabled>
+                    <div class="form-group">
+                        <label for="disabledTextInput">Nombre</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="ROBERTO DELGADO MARTÍNEZ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="disabledTextInput">Puesto</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="DIRECCIÓN GENERAL DE ADMINISTRACIÓN Y FINANZAS">
+                    </div>
+                  </fieldset>
+            </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn boton-12">
+               <a href="OrdenesCompraAltaContrato-1.html">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- ModalAgregarPersonaAlmacen-->
+<div class="modal fade" id="AgregarPersonaAlmacen" tabindex="-1" role="dialog" aria-labelledby="AgregarPersonaAlmacenLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" id="AgregarPersonaAlmacenLabel"><samp class="text-mensaje">Responsable Almacén</samp></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    <label for="inputAddress2">Clave del Centro Gestor</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="{Clave}">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Domicilio</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>CECILO ROBELO 3, EL PARQUE, VENUSTIANO CARRANZA, 15960</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+
+                  <fieldset disabled>
+                    <div class="form-group">
+                        <label for="disabledTextInput">Responsable de Almacén</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="ROMAN ALVAREZ">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="disabledTextInput">Puesto</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="{PUESTO}">
+                      </div>
+                      
+                      <div class="form-group row">
+                        <div class="form-group col-md-7">
+                            <label for="inputZip">Teléfono</label>
+                            <input type="text" class="form-control" id="55-5652-2345">
+                          </div>
+
+                          <div class="form-group col-md-4">
+                            <label for="inputZip">Extensión</label>
+                            <input type="text" class="form-control" id=" ">
+                          </div>
+                      </div>
+
+                      
+                      <div class="form-group">
+                        <label for="disabledTextInput">Correo electrónico</label>
+                        <input type="text" id="disabledTextInput" class="form-control" placeholder="roman.alvarez@almacen1.cdmx.gob.mx">
+                      </div>
+                  </fieldset>
+                  
+            </form>
+            
+
+            
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn boton-12">
+               <a href="">Agregar</a></button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script> -->
+  
+  <script>
+    var form_ele = '.form1';
+ 
+ // make eveything disabled
+ var disableFormEdit = function(selector){	
+   $(selector).removeClass('form--enabled').addClass('form--disabled');
+     $(selector + ' input, ' + selector + ' select, ' + selector + ' button').prop('disabled', true);
+ }
+ 
+ 
+ // make eveything enabled
+ var enableFormEdit = function(selector){	
+     $(selector + ' input, ' + selector + ' select, ' + selector + ' button ').prop('disabled', false);
+   $(selector).removeClass('form--disabled').addClass('form--enabled');
+ }
+ 
+ disableFormEdit(form_ele);
+ 
+ $('.js-toggleForm').click(function(){
+    // get the status of form
+   var form_status = $(form_ele).hasClass('form--disabled') ? 'disabled' : 'enabled';
+   
+   // check if disabled or enabled
+   switch (form_status){
+     case 'disabled':
+       enableFormEdit(form_ele);
+       $(this).text('Guardar')
+       break;
+     case 'enabled':
+       disableFormEdit(form_ele);
+       $(this).text('Editar')
+       break;
+   }
+ });
+   </script>
+</body>
+
+
+
+</html>

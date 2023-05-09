@@ -1,0 +1,790 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Ficha Producto</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="catalogos_1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+</head>
+
+
+<body>
+
+
+  <main>
+    <div class="row d-flex align-items-center">
+      <div class="col-6">
+        <h1 class="m-2 p-3">Alta Contrato Marco</h1>
+      </div>
+      <div class="col-6 mt-4 d-flex justify-content-end">
+        <button type="button" class="btn bg-white">
+          <p class="text-gold-1 mr-3"> <i class="fa-solid fa-arrow-left text-gold-1 mt-1"></i><span
+            class="ml-3">Regresar al Contrato Marco</span></p>
+        </button>
+        <!-- <a href="#">
+          <p class="text-gold-1 mr-3"> <i class="fa-solid fa-arrow-left text-gold-1 mt-1"></i><span
+              class="ml-3">Regresar al Contrato Marco</span></p>
+        </a> -->
+      </div>
+    </div>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb text-2">
+        <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+        <li class="breadcrumb-item"><a href="#">Contratos Marco</a></li>
+      </ol>
+    </nav>
+    <div class="separator"></div>
+    <div class="row  bg-light d-flex align-items-center justify-content-center">
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-transp " data-toggle="modal" data-target="#modal-ValidaEco">
+        <div class="col-1 mt-3 text-center mb-3">
+          <div class="row">
+            <p class="text-lt">V. Económica</p>
+          </div>
+          <div class="row text-center">
+            <div class="mt-4 text-center">
+              <p class="indicador-count-card-5 fa-solid fa-check text-center"></p>
+            </div>
+          </div>
+        </div>
+      </button>
+
+      <div class="col-2 mt-3 d-none d-sm-none d-md-block cont-linea">
+        <hr class="linea-1">
+      </div>
+
+      <button type="button" class="btn btn-transp" data-toggle="modal" data-target="#modal-ValidaAdm">
+        <div class="col-1 mt-3 text-center mb-3">
+          <div class="row">
+            <p class="text-lt">V. Administrativa</p>
+          </div>
+          <div class="row text-center">
+            <div class="mt-4 text-center ml-3">
+              <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+            </div>
+          </div>
+        </div>
+      </button>
+
+      <div class="col-2 mt-3 d-none d-sm-none d-md-block cont-linea">
+        <hr class="linea-1">
+      </div>
+
+      <button type="button" class="btn btn-transp" data-toggle="modal" data-target="#modal-ValidaTec">
+        <div class="col-1 mt-3 text-center mb-3">
+          <div class="row">
+            <p class="text-lt">V. Técnica</p>
+          </div>
+          <div class="row text-center">
+            <div class="mt-4 text-center">
+              <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+            </div>
+          </div>
+        </div>
+      </button>  
+
+      <div class="col-2 mt-3 d-none d-sm-none d-md-block cont-linea">
+        <hr class="linea-1">
+      </div>
+
+      <button type="button" class="btn btn-transp" data-toggle="modal" data-target="#modal-Publicacion">
+        <div class="col-1 mt-3 text-center mb-3">
+          <div class="row">
+            <p class="text-lt">Publicación</p>
+          </div>
+          <div class="row text-center">
+            <div class="mt-4 text-center">
+              <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+            </div>
+          </div>
+        </div>
+      </button>  
+
+    </div>
+    <!-- -----Información------- -->
+    <div class="row d-flex mt-1">
+      <div class="col-sm-12 col-md-10">
+        <nav aria-label="breadcrumb mt-5">
+          <ol class="breadcrumb mt-3 text-2">
+            <li class="breadcrumb-item"><a href="#">PRODUCTOCDMX2022-01-2111000052-01</a></li>
+            <li class="breadcrumb-item"><a href="#">- 2111000052 | CAJAS DE CARTÓN (CORRUGADO, LISO Y PLEGADIZO</a></li>
+            <li class="breadcrumb-item"><a href="#">- Versión: 1</a></li>
+          </ol>
+        </nav>
+      </div>
+      <div class="col-sm-12 col-md-2 float-right">
+        <nav aria-label="breadcrumb mt-5">
+          <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item float-right text-2"><a href="#">Última edición: dd-mm-aaaa</a></li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <hr>
+    <!-- -----Información------- -->
+
+    
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-12 col-lg-5 ">
+        <div class="mt-3">
+
+          
+          <!-- -----Alerta 1------- -->
+          <div class="alert alert-warning alert-dismissible fade show col-lg-10 col-md-8  mt-4 ml-5" role="alert">
+            <div class="d-flex align-items-center">
+              <div class="bg-amarillo mr-3"><i class="fa-solid fa-triangle-exclamation text-4"></i></div>
+              <strong class="text-aler-amarillo">Revisa que las fotografías cumplan con el estándar</strong>
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+          <!-- -----Alerta 1------- -->
+      
+          <div class="row">
+            <div class="col-sm-6 col-md-12">
+              <h1 class="ml-4 nombre-prod"><strong>CAJA DE CARTÓN PARA ARCHIVO MUERTO</strong></h1>
+            </div>
+          </div>
+          <div class="row justify-content-end float-right mb-4 col-md-6 col-12 mt-3">
+            <p class="porLiberar">Nuevo</p>
+          </div>
+          <div class="mySlides mt-5">
+            <div class="numbertext">1 / 6</div>
+            <img src="img/caja_carton_01.jpg" class="zoom" style="width:100%; height: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="img/caja_carton_02.jpg" class="zoom" style="width:100%; height: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="img/caja_carton_03.jpg" class="zoom" style="width:100%; height: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="img/caja_carton_04.jpg" class="zoom" style="width:100%; height: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="img/caja_carton_05.jpg" class="zoom" style="width:100%; height: auto;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="img/caja_carton_05.jpg" class="zoom" style="width:100%; height: auto;">
+          </div>
+
+
+          <!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a> -->
+
+
+          <div class="row mt-3">
+            <div class="column">
+              <img class="demo cursor" src="img/caja_carton_01.jpg" style="width:100%" onclick="currentSlide(1)"
+                alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/caja_carton_02.jpg" style="width:100%" onclick="currentSlide(2)"
+                alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/caja_carton_03.jpg" style="width:100%" onclick="currentSlide(3)"
+                alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/caja_carton_04.jpg" style="width:100%" onclick="currentSlide(4)"
+                alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/caja_carton_05.jpg" style="width:100%" onclick="currentSlide(5)"
+                alt="">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="img/caja_carton_06.jpg" style="width:100%" onclick="currentSlide(6)"
+                alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 d-none d-sm-none d-md-block">
+            <!-- -----Alerta 3------- -->
+            <!-- <div class="alert alert-warning alert-dismissible fade show col-lg-12 col-md-9 col-11 mt-4 mr-2"
+                  role="alert">
+                  <div class="d-flex align-items-center">
+                    <div class="bg-amarillo mr-3"></div>
+                    <strong class="text-aler-amarillo">Revisa el nombre del producto</strong>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                </div> -->
+            <!-- -----Alerta 3------- -->
+            <span class="text-1 font-weight-bold ml-2">ULINE</span>
+            <p class="text-10 ml-2">CAJAS PARA ARCHIVOS CON TAPA
+              ABATIBLE </p>
+            <div class="col-12 col-md-12 col-lg-12 mt-3">
+              <div style="overflow-x: auto;" class="">
+                <p class="text-2"><strong>Modelo:</strong> S-21531</p>
+                <p class="text-2"><strong>Material:</strong> CORRUGADO PLÁSTIFICADO</p>
+                <p class="text-2"><strong>Mínimo de venta:</strong> 100 {piezas}</p>
+                <p class="text-2"><strong>Stock disponible:</strong>1,000 {piezas}</p>
+              </div>
+            </div>
+          </div>
+
+        <!-- -----Alerta 2------- -->
+        <div class="alert alert-warning alert-dismissible fade show col-lg-8 col-md-6 col-10 mt-4 mx-5" role="alert">
+          <div class="d-flex align-items-center">
+            <div class="bg-amarillo mr-3"><i class="fa-solid fa-triangle-exclamation text-4"></i></div>
+            <strong class="text-aler-amarillo">Revisa la descripción del producto</strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        <!-- -----Alerta 2------- -->
+
+        <div class="col-12 mt-3">
+          <p class="titel-2">Descripción</p>
+        </div>
+        <div class="separator col-12 col-md-8"></div>
+        <div class="col-12 col-md-8 mt-3">
+          <p class="text-1">Fabricada para uso pesado. Extremos de corrugado triple. Base de corrugado doble.
+            Se vende por atado de 24 piezas.</p>
+        </div>
+        <br>
+        <div class="col-12 mt-3">
+          <p class="titel-2">Otras características</p>
+        </div>
+        <div class="separator col-12 col-md-8"></div>
+        <div class="col-12 col-md-12 col-lg-8">
+          <div style="overflow-x: auto;" class=" ">
+            <p class="text-2 mt-2"><strong>SKU</strong> 85409</p>
+            <p class="text-2 mt-2"><strong>Fabricante</strong> UNLINE</p>
+            <p class="text-2 mt-2"><strong>Dimensiones</strong> LARGO: 15", ANCHO:12", ALTO: 10"</p>
+            <p class="text-2 mt-2"><strong>Empaque</strong> Plástico</p>
+            <p class="text-2 mt-2"><strong> Grado de integración nacional</strong>50%</p>
+          </div>
+        </div>
+        <div class="col-12 mt-3">
+          <p class="titel-2">Información complementaria</p>
+        </div>
+        <div class="separator col-12 col-md-8"></div>
+        <div class="row m-3 col-ms-3">
+          <div class="col-3 text-center">
+            <p class="text-2">Ficha técnica</p>
+            <a href="#">
+              <img src="img/file.svg" style="width: 20%; align-items: center;" alt="PDF">
+            </a>
+          </div>
+          <div class="col-3 col-ms-3 text-center">
+            <p class="text-2">Otros</p>
+            <a href="#">
+              <img src="img/file.svg" style="width:  20%; align-items: center;" alt="PDF">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-lg-5">
+        <div class="row">
+          <div class="col-12 col-md-6 d-none d-sm-none d-md-block">
+            <!-- -----Alerta 3------- -->
+            <div class="alert alert-warning alert-dismissible fade show col-lg-12 col-md-9 col-11 mt-4 mr-2"
+              role="alert">
+              <div class="d-flex align-items-center">
+                <div class="bg-amarillo mr-3"><i class="fa-solid fa-triangle-exclamation text-4"></i></div>
+                <strong class="text-aler-amarillo">Revisa el nombre del producto</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            </div>
+            <!-- -----Alerta 3------- -->
+            <span class="text-gold ml-2">ULINE</span><p class="nombre-prod-red ml-2">CAJAS PARA ARCHIVOS CON TAPA
+              ABATIBLE </p>
+            <div class="col-12 col-md-12 col-lg-12 mb-2">
+              <div style="overflow-x: auto;" class="">
+                <p class="text-2"><strong>Modelo:</strong> S-21531</p>
+                <p class="text-2"><strong>Material:</strong> PVC</p>
+                <p class="text-2"><strong>Unidades por paquete:</strong> 24 piezas</p>
+                <p class="text-2"><strong>Empaque:</strong> Plástico</p>
+                <p class="text-2"><strong> Stock disponible:</strong>1,000 piezas</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 mt-2 d-none d-sm-none d-md-block">
+            <div class="row">
+              <div class="col-5">
+                <img src="img/logoEjemplo.png" class="img-fluid border" alt="logo">
+              </div>
+              <div class="vl col-1 d-flex justify-content-center"></div>
+              <div class="col-5">
+                <div class="row mt-3">
+                    <p class="text-1">ULINE S.A. DE (...)</p>
+                </div>
+                <div class="row mt-1">
+                  <a href="#"><i class="fa-solid fa-star estrellaCrrito-gris text-center col-2"></i></a>
+                  <a href="#"><i class="fa-solid fa-star estrellaCrrito-gris text-center col-2"></i></a>
+                  <a href="#"><i class="fa-solid fa-star estrellaCrrito-gris text-center col-2"></i></a>
+                  <a href="#"><i class="fa-solid fa-star estrellaCrrito-gris text-center col-2"></i></a>
+                  <a href="#"><i class="fa-solid fa-star estrellaCrrito-gris text-center col-2"></i></a>
+                </div>
+                <div class="row mt-3">
+                  <p class="text-1">(0) Opiniones</p>
+                  <p class="text-1">(30) Productos</p>
+                </div>
+              </div>
+            </div>
+            <div class="separator mt-3"></div>
+            <div class="row m-3">
+              <button type="button" class="btn bg-white d-flex align-items-center" data-toggle="modal"
+                data-target="#exampleModaPreguntas" style="border: 0;">
+                <i class="fa-solid fa-message text-10"></i>
+                <p class="text-mensaje">Enviar mensaje</p>
+              </button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="col-12 col-md-6">
+
+            <!-- -----Alerta 4------- -->
+            <div class="alert alert-danger alert-dismissible fade show col-lg-12 col-md-9 col-11 mt-4 mr-2"
+              role="alert">
+              <div class="d-flex align-items-center">
+                <div class="bg-rojo mr-3"><i class="fa-solid fa-triangle-exclamation text-4 ml-1"></i></div>
+                  <strong class="text-aler-rojo mr-3">El precio está fuera del rango del PMR</strong>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+            </div>
+            <!-- -----Alerta 4------- -->
+            
+            <div class="row d-flex align-items-center ml-1 mt-4">
+              <div class="col-12 col-md-6 ">
+                <p class="text-2">Precio unitario</p>
+                <p class="text-precio-mayoreo-red">$150.00</p>
+                <p class="text-2">x 1 pieza</p>
+              </div>
+            </div>
+            <div class="row mt-2 ml-3">
+              <p class="text-2"><strong>Vigencia del precio:</strong> 90 días</p>
+            </div>
+            <div class="row ml-1">
+              <div class="form-group col-md-7 col-lg-8 mt-3">
+                <label for="inputState" class="titel-2">Color</label>
+                <select id="inputState" class="form-control">
+                  <option selected class="text-7">BLANCO</option>
+                  <option>...</option>
+                </select>
+              </div>
+
+              <div class="row ml-1">
+                <div class="form-group col-md-10 col-sm-12">
+                  <label for="inputCity" class="titel-2">Tamaño</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="CARTA">
+
+                </div>
+              </div>
+
+
+              <div class="row ml-1">
+                <div class="form-group col-md-10 col-sm-12">
+                  <label for="inputCity" class="titel-2">Cantidad</label>
+                  <div class="d-flex align-items-center">
+                    <a href="#">
+                      <i class="fa-solid fa-circle-minus arena mr-2"></i>
+                    </a>
+                    <input type="text" class="form-control col-3 text-center" placeholder="1" id="inputCity">
+                    <a href="#">
+                      <i class="fa-solid fa-circle-plus arena ml-3"></i>
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-2 ml-2">
+                <div class="col-12">
+                  <a href="#">
+                    <i class="fa-regular fa-heart text-5"></i>
+                    <span class="text-1 ml-3">Agregar a favoritos</span>
+                  </a>
+                </div>
+                <div class="col-12 mt-2">
+                  <a href="#">
+                    <i class="fa-solid fa-share-nodes text-gold"></i>
+                    <span class="text-1 ml-3">Compartir</span>
+                  </a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- Sección carrito -->
+          <div class="col-12 col-md-6 mt-3">
+           
+            <div class="card bg-light">
+              <div class="card-body">
+                <p class="titel-2 ">Desglose de precios</p>
+                <div class="row mt-3">
+                  <div class="col-12 col-md-6">
+                    <p class="text-1">$110 x 1 piezas:</p>
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <p class="desg-precios">$150.00</p>
+                  </div>
+                </div>
+                <p class="titel-2  mt-3">Tiempo de entrega</p>
+                <p class="text-1">3 días hábiles</p>
+
+                <!-- <div class="row mt-4 bac-gris rounded">
+                  <div class="col-12 m-2 bac-red text-center p-2 rounded">
+                    <a href="#">
+                      <p class="text-carrito "><i class="fa-solid fa-cart-shopping text-4"></i>
+                        Agregar al carrito</p>
+                    </a>
+                  </div>
+                </div>
+
+                <a href="#"><p class="text-5 mt-2 text-center font-weight-bold">Ver carrito</p></a> -->
+
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 mt-2 d-block d-sm-block d-md-none mt-3">
+        <div class="row d-flex align-items-center">
+          <div class="col-5">
+            <img src="img/logoEjemplo.png" class="img-fluid border" alt="logo">
+          </div>
+          <div class="vl col-1 d-flex justify-content-center"></div>
+          <div class="col-5">
+            <div class="row mt-3">
+                <p class="text-1">ULINE S.A. DE (...)</p>
+            </div>
+            <div class="row mt-1">
+              <a href="#"><i class="fa-solid fa-star estrellaCrrito-yellow text-center col-2"></i></a>
+              <a href="#"><i class="fa-solid fa-star estrellaCrrito-yellow text-center col-2"></i></a>
+              <a href="#"><i class="fa-solid fa-star estrellaCrrito-yellow text-center col-2"></i></a>
+              <a href="#"><i class="fa-solid fa-star estrellaCrrito-yellow text-center col-2"></i></a>
+              <a href="#"><i class="fa-solid fa-star estrellaCrrito-yellow text-center col-2"></i></a>
+            </div>
+            <div class="row mt-3">
+              <p class="text-1">(0) Opiniones</p>
+              <p class="text-1">(30) Productos</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+
+    </div>
+
+
+  </main>
+
+
+
+  <!-- footer -->
+
+  <!-- footer -->
+
+  <!-- Modal V. Económica -->
+  <div class="modal fade" id="modal-ValidaEco" tabindex="-1" aria-labelledby="modal-ValidaEco" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content  modal-md">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" id="modal-ValidaEco"><strong>Validación económica</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ml-3">
+          <div class="row">
+            <p class="titel-2">Cajones para archivos con tapa abatible</p>
+          </div>
+          <!-- <div class="row">
+            <p class="titel-1">Cajones para archivos con tapa adaptable</p>
+          </div> -->
+
+          <div class="row ">
+            <div class=".col-3">
+              <div class="mt-4 text-center ml-3">
+                <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+              </div>
+            </div>
+            <div class="col-7">
+              <p class="text-1 mt-2">Ficha aprobada</p>
+            </div>
+            <div class="col-12 ml-5">
+              <p class="fecha-mod_1 ml-4">dd-mm-aaaa</p>
+              <p class="ml-4">Intento 1</p>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class=".col-3">
+              <div class="mt-4 text-center ml-3">
+                <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+              </div>
+            </div>
+            <div class="col-7">
+              <p class="text-1 mt-2">Ficha bloqueada</p>
+            </div>
+            <div class="col-12 ml-5">
+              <p class="fecha-mod_1 ml-4">dd-mm-aaaa</p>
+              <p class="ml-4">Intento 3</p>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class=".col-3">
+              <div class="mt-4 text-center ml-3">
+                <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+              </div>
+            </div>
+            <div class="col-7">
+              <p class="text-1 mt-2">Ficha rechazada</p>
+            </div>
+            <div class="col-12 ml-5">
+              <p class="fecha-mod_1 ml-4">dd-mm-aaaa</p>
+              <p class="ml-4">Intento 2</p>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class=".col-3">
+              <div class="mt-4 text-center ml-3">
+                <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+              </div>
+            </div>
+            <div class="col-7">
+              <p class="text-1 mt-2">Ficha rechazada</p>
+            </div>
+            <div class="col-12 ml-5">
+              <p class="fecha-mod_1 ml-4">dd-mm-aaaa</p>
+              <p class="ml-4">Intento 1</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+  <!-- Modal V. Económica -->
+
+  <!-- Modal Validación administrativa -->
+  <div class="modal fade" id="modal-ValidaAdm" tabindex="-1" aria-labelledby="modal-ValidaAdm" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content  modal-md">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" id="modal-ValidaAdm"><strong>Validación administrativa</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ml-3">
+          <div class="row">
+            <p class="titel-2">Cajones para archivos con tapa abatible</p>
+          </div>
+          <form>
+            <div class="form-row align-items-center d-flex">
+              <div class="col-4">
+                <p class="text-1">¿Se acepta la ficha?</p>
+              </div>
+              <div class="col-3">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Sí</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">No</label>
+                </div>
+              </div>                
+            </div>
+          </form>
+          <form action="/action_page.php">
+            <label for="fecha" class="text-1 m-2">Fecha de revisión:</label>
+            <input type="date" id="fecha" name="fecha ">
+          </form>
+          <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Escribe aquí los cambios que se requieren">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn boton-1"">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Validación administrativa -->
+
+    <!-- Modal V. técnica -->
+    <div class="modal fade" id="modal-ValidaTec" tabindex="-1" aria-labelledby="modal-ValidaTec" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content  modal-md">
+          <div class="modal-header bg-light">
+            <h5 class="modal-title" id="modal-ValidaTec"><strong>Validación técnica</strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body ml-3">
+            <!-- <div class="row">
+              <p class="titel-2">Validación económica</p>
+            </div> -->
+            <div class="row">
+              <p class="titel-2">Cajones para archivos con tapa abatible</p>
+              
+            </div>
+  
+            <div class="row mt-3">
+              <div class=".col-3">
+                <div class="mt-4 text-center ml-3">
+                  <p class="indicador-count-card-5 fa-solid fa-check text-center"> </p>
+                </div>
+              </div>
+              <div class="col-7">
+                <p class="text-1 mt-2">Ficha aprobada</p>
+                <p class="text-2">dd-mm-aaaa</p>
+              </div>
+              <div class="col-12 ml-3">
+                <p class="">Comentarios</p>
+              </div>
+              <div class="col-12 ml-3">
+                <p class="font-italic">No se aceptó el resultado de laboratorio. El laboratorio no contaba con la certificación EMA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+    <!-- Modal V. técnica -->
+
+      <!-- Modal Publicación -->
+  <div class="modal fade" id="modal-Publicacion" tabindex="-1" aria-labelledby="modal-Publicacion" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content  modal-md">
+        <div class="modal-header bg-light">
+          <h5 class="modal-title" id="modal-Publicacion"><strong>Publicación del producto</strong></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body ml-3">
+          <!-- <div class="row">
+            <p class="titel-2">Publicación del Producto</p>
+          </div> -->
+          
+            <div class="form-row align-items-center d-flex">
+              <div class="col-12">
+                <p class="titel-2 ml-1">Cajones para archivos con tapa abatible</p>
+              </div>
+              <div class="row m-2">
+                <p class="text-2 ">Este producto está listo para ser publicado. Al confirmar la acción
+                  estará disponible para las URG y no se podrá revertir la acción.</p>
+              </div>
+                        
+            </div>
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn boton-1"">Publicar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Publicación -->
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+            </script>
+
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+              crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+              integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+              crossorigin="anonymous"></script>
+            <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+            <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("demo");
+                let captionText = document.getElementById("caption");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+              }
+            </script>
+
+<script>
+  $(document).ready(function(){
+      $('.zoom').hover(function() {
+          $(this).addClass('transition');
+      }, function() {
+          $(this).removeClass('transition');
+      });
+  });
+  </script>
+
+</html>

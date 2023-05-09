@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Contratos Marco</title>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link href="catalogos_1.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+		rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+</head>
+
+	
+<body>
+	<header class="sombra p-1">
+		<div class="row m-3 d-flex align-items-center">
+			<!-- <div class="col-md-8 col-12 d-flex mb-2 d-none d-md-block mb-3">
+				<img src="img/logoSAFtianguis_Mesa de trabajo 1.svg" style="width: 40%;;" alt="Logotipo Secretaria de Finanzas">
+			</div> -->
+			<div class="col-12 col-md-8">
+				<nav class="navbar navbar-light badge-white">
+					<a class="navbar-brand" href="#">
+						<img src="img/logoSAFtianguis_Mesa de trabajo 1.svg" style="width: 100%;;" alt="Logotipo Secretaria de Finanzas">
+					</a>
+				  </nav>
+			</div>
+			<div class="col-md-4 col-12 d-flex justify-content-end">
+				<div class="col-1 col-md-1 vl-3"></div>
+				<div class="col-2 col-md-2 justify-content-center">
+					<a href="#">
+						<i class="fa-solid fa-magnifying-glass iconoHeader sombra"></i>
+					</a>
+				</div>
+				<div class="col-1 col-md-1 vl-3"></div>
+				<div class="col-3 col-md-3 d-flex align-items-center">
+					<div class="">
+						<a href="#">
+							<i class="fa-solid fa-bell iconoHeader sombra"></i> 
+						</a>
+					</div>
+					<div class="col-2 col-md-2 ml-3">
+						<span class="badge badge-white border">0</span>	
+					</div>
+				</div>
+				<div class="col-1 col-md-1 vl-3"></div>
+				<div class="col-3 col-md-3">
+					<a href="#">
+						<i class="fa-solid fa-user iconoHeader sombra"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center align-items-center">
+		<div class=" container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="nav nav-item"><span class="nav-active"><a href="#" class="underline">Inicio</a></span>
+				</div>
+				<div class="collapse " id="collapseExample">
+				</div>
+				<div class="dropdown">
+					<a href="#" class="underline">Contratos Marco <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+				</div>
+				<div class="nav nav-item"><a href="#" class="underline">Productos</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Subastas</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Órdenes de compra</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Facturas</a></div>
+
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<h1 class="m-2 p-3 mt-3">Contratos Marco</h1>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">En esta página agrega tus productos de acuerdo al contrato en el que participas.</a></li>
+			</ol>
+		</nav>
+		<div class="separator mb-3"></div>
+			<div class="row elemtos justify-content-around mb-4">
+				<div class="col-12 col-lg-3 col-md-3 col-sm-8 mt-2">
+					<form>
+						<input class="form-control" ng-model="searchUserTerm" type="text" placeholder="Buscar..." aria-label="default input example">
+					</form>
+				</div>
+				<!--Se cambiaron las columnas-->
+				<div class="col-12 col-md-4 mt-3">
+					<form class="float-right">
+						<div class="form-row align-items-leaft">
+							<div class="col-auto my-1">
+								<label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Todos</label>
+								<select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+								  <option selected>Mostrar</option>
+								  <option value="1">Todos</option>
+								  <option value="2">Nuevos</option>
+								  <option value="3">....</option>
+								</select>
+							  </div>
+						</div>
+					</form>
+				</div>
+			</div>
+		
+		<div class="container">
+			
+			
+			
+			<table class="table justify-content-md-center">
+				<thead>
+					<tr>
+						<th scope="col" class="sortable">#</th>
+						<th scope="col" class="sortable">Contrato Marco</th>
+						<th scope="col" class="sortable">CABMS</th>
+						<th scope="col" class="sortable">Descripción de CABMS</th>
+						<th scope="col" class="tab-cent">Versión</th>
+						<th scope="col" class="tab-cent">Producto</th>
+						<th scope="col" class="tab-cent">Agregar</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>PAPELERIA-01-2022-CDMX</td>
+						<td>2111000006</td>
+						<td class=" ">CAJAS DE CARTÓN (CORRUGADO, LIZO Y PLEGADIZO)</td>
+						<td class="tab-cent">1</td>
+						<td class="tab-cent"> <!--ver+-->
+							<a href="#" class="text-gold">1</a>
+						</td>
+						<td class="tab-cent"> <!--ver+-->
+							<a href="#"><strong> <i class="fa-solid fa-plus"></i></strong></a>
+							<!-- <a href="#"><img src="Iconos/2-mas_Mesa de trabajo 1.svg" style="width: 8%;" alt="/"> </a> -->
+						</td>
+					
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="row col-md-8 justify-content-lg-end right">
+				<div class="col-md-5">
+					<h4 class="pages"> 
+						Elementos por página {1-10} de {10}  
+						<i class="fa fa-angle-left pages" aria-hidden="true"></i>
+						<i class="fa fa-angle-right pages" aria-hidden="true"></i>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<!-- footer -->
+	<footer>
+		
+		<div class="row d-flex align-self-end">
+			<div class="container-fluid ft-leyenda">
+				<div class="row">
+					<ul class="ft-leyenda-list text-decoration-none">
+						<li>
+							<img src="images/lg_cdmx_footer.svg" alt="" />
+						</li>
+						<li>
+							Diseñado y operado por la Secretaría de Administración y Finanzas
+							<br>
+							Cualquier duda y/o problema relacionado con el sitio, favor de contactarnos a través de <a
+								href="mailto:name@email.com">mesadeservicio@finanzas.cdmx.gob.mx</a>
+							<br>
+							Se brindará atención telefónica de Lunes a Viernes en el teléfono <strong>(55) 5723 6505 ext. 5026,
+								5004, 5070</strong>
+						</li>
+					</ul>
+				</div>
+					
+			</div>
+	
+	
+			
+			<div class="container-fluid ft-legal">
+				<div class="row">
+					<ul class="ft-legal-list text-decoration-none">
+					<li><a href="#">Términos y condiciones</a></li>
+					<li><a href="#">Política de privacidad</a></li>
+					<li>2022 Gobierno de la CDMX</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<!-- footer -->
+
+
+	<!----- MODAL URG ----->
+	<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-12 col-sm-4">
+								<div class="form-group rfc-1">
+									<label for="formGroupExampleInput">Clave del Centro Gestor</label>
+									<input type="text" class="form-control" id="formGroupExampleInput"
+										placeholder="01CD03">
+								</div>
+							</div>
+							<div class="col-12 col-sm-4">
+								<div class="form-group">
+									<label for="disabledTextInput">Tipo de URG</label>
+									<input class="form-control" type="text" placeholder="ÓRGANO DESCONCENTRADO"
+										readonly>
+								</div>
+							</div>
+							<div class="col-12 col-sm-4 text-align-center">
+								<div class="form-group switch-right">
+									<label for="formGroupExampleInput">Activo</label>
+									<div class="custom-control custom-switch">
+										<label class="switch">
+											<input type="checkbox" checked>
+											<span class="slider round"></span>
+										</label>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12">
+								<div class="form-group">
+									<label for="formGroupExampleInput">Unidad responsable de gasto (URG)</label>
+									<input class="form-control" type="text" placeholder="CENTRO DE COMANDO, CONTROL, CÓMPUTO, COMUNICACIONES Y CONTACTO CIUDADANO"
+										readonly>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12">
+								<div class="form-group">
+									<label for="formGroupExampleInput">Dirección URG</label>
+									<input class="form-control" type="text" placeholder="CECILIO ROBELO 3, EL PARQUE, VENUSTIANO CARRANZA, 15960 CIUDAD DE MÉXICO, CDMX"
+										readonly>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<!-- scroll -->
+						<div class="scroll" data-spy="scroll">
+							<form>
+								<div class="form-group row">
+									<div class="custom-control custom-checkbox ml-4">
+										<input type="checkbox" class="custom-control-input" id="customCheck1">
+										<label class="custom-control-label ml-lg-3" for="customCheck1">Nombre</label>
+									</div>
+									<div class="col-sm-9">
+										<input type="text" class="form-control form-control-sm" id="nombre" placeholder="GUSTAVO MONDRAGON VARGAS" readonly>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="Cargo" class="col-sm-2 col-lg-1 col-form-label col-form-label-sm ml-lg-5">Cargo</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control form-control-sm" id="Cargo" placeholder="J.U.D. DE PLANEACION" readonly>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="permiso" class="col-sm-2 col-lg-1 col-form-label col-form-label-sm ml-lg-5">Permiso</label>
+									<div class="col-sm-3 col-lg-2">
+										<input type="text" class="form-control form-control-sm" id="permiso" placeholder="EDICIÓN" readonly>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- termina scroll -->
+						<hr>
+							<form>
+								<div class="form-group row">
+									<label for="fecha" class="col-sm-2 col-lg-4 mx-0 col-form-label col-form-label-sm">Adhesión a Convenio Marco</label>
+									<div class="input-group date col-lg-3 col-sm-4" id="id_4">
+                            			<input type="text" value="05/16/2018" class="form-control" required="">
+                           				<div class="input-group-addon input-group-append">
+                                			<div class="input-group-text">
+                                    			<i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                			</div>
+                            			</div>
+                       				</div>
+								</div>
+							</form>
+						
+							<div class="input-group mb-3 col-12 col-md-7">
+								<input type="file" class="form-control-file" id="Examinar...">
+							</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn boton-1">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----- MODAL URG ----->
+
+
+
+	<script>
+		function ShowModal(){
+		   $('#myModal').modal('show')
+		}
+	  </script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	
+</body>
+
+</html>

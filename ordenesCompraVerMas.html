@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Orden compra núm</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="catalogos_1.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+
+<body>
+    <header>
+        <div class="row my-2">
+            <div class="col-sm-12 col-md-7">
+                <nav class="navbar navbar-light badge-white">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logoSAFtianguis_Mesa de trabajo 1.svg" style="width: 100%;"
+                            alt="Logotipo Secretaria de Finanzas">
+                    </a>
+                </nav>
+            </div>
+
+            <div class="col-md-5 col-sm-12 d-flex align-items-center" style="padding: 0;">
+
+                <div class="col-sm-3 col-md-3 d-flex align-items-center justify-content-center border-right">
+                    <a href=" #"><i class="fa-solid fa-bell iconoHeader sombra text-center"></i></a>
+                    <span class="badge badge-white badge-gris ml-3">0</span>
+                </div>
+
+                <div class="col-sm-3 col-md-3 text-center border-right">
+                    <a href="#">
+                        <i class="fa-solid fa-user iconoHeader sombra"></i>
+                    </a>
+                </div>
+
+                <div class="col-sm-3 col-md-3 text-center border-right">
+                    <a href="#"><i class="fa-solid fa-heart car-red"></i></a>
+                </div>
+
+                <div class="col-sm-3 col-md-3 d-flex align-items-center">
+                    <button class="btn btn-white" type="button" data-toggle="collapse"
+                        data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2"
+                        style="background-color: #fff;">
+                        <i class="fa-solid fa-cart-shopping car-red"></i>
+                    </button>
+                    <span class="badge badge-pill badge-light border badge-red ml-3">10</span>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="nav nav-item"><a href="#" class="nav-active underline">Inicio</a></div>
+                <div class="nav nav-item">
+                    <a href="#" class="underline">Requisiciones</a>
+                </div>
+                <div class="nav nav-item dropdown" style="top: -6px;">
+                    <a href="#" class="underline">Contrato Marco<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                    <div class="dropdown-content" style="height: auto; width: 200px;">
+
+                        <li class="dropdown col-autp" style="height: auto; height: auto;">
+                            <a href="#" class="dropdown underline">Equipo de cómputo
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item " style="height: auto;">
+                            <a href="#" class="dropdown underline">Material de limpieza
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item " style="height: auto;">
+                            <a href="#" class="dropdown underline">Papeleria
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="dropdown nav-item " style="height: auto;">
+                            <a href="#" class="dropdown underline">Telefonía celular
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item" style="height: auto;">
+                            <a href="#" class="dropdown underline">Vestuario y uniformes
+                                <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </div>
+                <div class="nav nav-item"><a href="#" class="underline">Subasta</a></div>
+                <div class="nav nav-item"><a href="#" class="underline">Órdenes de compra</a></div>
+                <div class="nav nav-item"><a href="#" class="underline">Reportes</a></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <div class="row">
+            <div class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
+                <a href="#" class="text-gold ml-5"><i class="fa-solid fa-arrow-left text-gold ml-1"></i> Regresar</a>
+                <a class="nav-item nav-link active ml-3 text-1" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Orden compra</a>
+            </div>
+
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <div class="row  d-flex justify-content-center">
+                    <div class="col-sm-12 col-md-4 text-center mt-3">
+                        <p class="text-10">ORDEN DE COMPRA: 1920-1</p>
+                        <p class="text-2">El seguimiento a tus paquetes y estatus se realiza por proveedor.
+                            En el icono de la columna “Seguimiento”, realiza las acciones requeridas.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">En tránsito</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Entregadas</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Aceptadas</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Devueltas</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Facturadas</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Pagadas</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Evaluadas</p>
+                    </div>
+                    <div class="col- ml-5 mt-3 d-flex">
+                        <span class="badge badge-pill badge-gris-1">0</span>
+                        <p class="text-1 ml-2 font-weight-bold">Finalizadas</p>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <section>
+            <div class="row px-5">
+                <div class="col-md-4 col-sm-12">
+                    <form>
+                        <input class="form-control" ng-model="searchUserTerm" type="text" placeholder="Buscar..."
+                            aria-label="default input example">
+                    </form>
+                </div>
+                <div class="col-md-4 col-sm-12"> </div>
+
+                <div class="col-md-2 col-sm-12">
+                    <form>
+                        <div class="form-group row">
+                            <label for="exampleFormControlSelect1" class="col-sm-2 col-form-label"><p class="text-2">Etapa</p></label>
+                            <div class="col-sm-10">
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                  <option>Confirmación</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                                  <option>5</option>
+                                </select>
+                            </div>
+                          </div>
+                    </form>
+                </div>
+
+                <div class="col-md-2 col-sm-6 mt-3">
+                    <h4 class="text_tabla_contador">
+                        <div class="dataTables_length" id="example1_length">
+                            <label>
+                                Ver
+                                <select name="example1_length" aria-controls="example1" class="dropdown-table">
+                                    <option value="10">10</option>
+                                    <option value="25">25</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </label>
+                        </div>
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <div class="tab-content col-12" id="nav-tabContent">
+            <div class="ml-4">
+                <table class="table">
+                 
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col" class="sortable tab-cent text-1">Proveedor</th>
+                            <th scope="col" class="tab-cent text-1"></th>
+                            <th scope="col" class="sortable text-1">CLAVECDMX</th>
+                            <th scope="col" class=" text-1">Descripción</th>
+                            <th scope="col" class="tab-cent text-1">Cantidad</th>
+                            <th scope="col" class="tab-cent text-1">Monto adjudicado</th>
+                            <th scope="col sortable" class="tab-cent text-1">Estatus</th>
+                            <th scope="col" class="tab-cent text-1">Incidencias</th>
+                            <th scope="col" class="tab-cent text-1">Seguimiento</th>
+                            <th scope="col" class="tab-cent text-1">Acuse</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-light">
+                            <td><a href="#"><i class="fa-solid fa-circle-minus green-2 mt-1"></i></a></td>
+                            <td scope="row" class="col-12">
+                                <div class="row">
+                                    <div class="col-1 text-1">1</div>
+                                    <div class="col-8  text-1">ULINE S.A. DE C.V.</div>
+                                </div>
+                            </td>
+
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="tab-cent text-1">0</td>
+                            <td class="tab-cent"><a href="#"><i class="fa-solid fa-pen-to-square text-gold"></i></a>
+                            </td>
+                            <td class="tab-cent"><a href="#"><i class="fa-solid fa-receipt text-gold"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row"></td>
+                            <td class="tab-cent"></td>
+                            <td></td>
+                            <td class="text-1">2111000052</td>
+                            <td class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON ...</td>
+                            <td class="tab-cent text-1">20 Piezas</td>
+                            <td class="tab-cent font-weight-bold text-1">$1,670.40</td>
+                            <td class="tab-cent text-1"><span class="rechasado font-weight-bold">Rechazada</span></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row"></td>
+                            <td class="tab-cent"></td>
+                            <td></td>
+                            <td class="text-1">2111000052</td>
+                            <td class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON ...</td>
+                            <td class="tab-cent text-1">20 Piezas</td>
+                            <td class="tab-cent text-1 font-weight-bold">$1,670.40</td>
+                            <td class="tab-cent text-1"><span class="aceptado font-weight-bold">Aceptado</span></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                        <tr class="bg-light">
+                            <td scope="row" class="text-1">2</td>
+                            <td class="tab-cent text-1">AZTECA S.A. DE C.V.</td>
+                            <td><a href="#"><i class="fa-solid fa-circle-minus green-2"></i></a></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="tab-cent text-1">0</td>
+                            <td class="tab-cent"><a href="#"><i class="fa-solid fa-pen-to-square text-gold"></i></a>
+                            </td>
+                            <td class="tab-cent"><a href="#"><i class="fa-solid fa-receipt text-gold"></i></a></td>
+                        </tr>
+
+                        <tr>
+                            <td scope="row"></td>
+                            <td class="tab-cent"></td>
+                            <td></td>
+                            <td class="text-1">2111000052</td>
+                            <td class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON ...</td>
+                            <td class="tab-cent text-1">20 Piezas</td>
+                            <td class="tab-cent text-1 font-weight-bold">$1,670.40</td>
+                            <td class="tab-cent text-1"><span class="aceptado font-weight-bold">Aceptado</span></td>
+                            <td> </td>
+                            <td> </td>
+                            <td> </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <div class="row col-md-8 justify-content-lg-end right">
+                    <div class="col-md-6 col-sm-12">
+                        <h4 class="pages">
+                            Elementos por página {1-10} de {10}
+                            <i class="fa fa-angle-left pages" aria-hidden="true"></i>
+                            <i class="fa fa-angle-right pages" aria-hidden="true"></i>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </main>
+
+    <!------ Modal carrito ------->
+    <div class="row">
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body carrito-compras bg-light border">
+                    <h5 class="card-title text-1 float-right mr-3 mt-2">
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </h5>
+                    <div class="cajasElementos">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border bg-white">
+                                <!-- <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p> -->
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="text-2">FORTEC</p>
+                                        <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                        <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                        <p class="text-1 float-right">Subtotal: <span
+                                                class="font-weight-bold">$1,440.00</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border bg-white">
+                                <!-- <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p> -->
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="text-2">FORTEC</p>
+                                        <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                        <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                        <p class="text-1 float-right">Subtotal: <span
+                                                class="font-weight-bold">$1,440.00</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border bg-white">
+                                <!-- <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p> -->
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="text-2">FORTEC</p>
+                                        <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                        <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                        <p class="text-1 float-right">Subtotal: <span
+                                                class="font-weight-bold">$1,440.00</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item border bg-white">
+                                <!-- <p class="text-1 font-weight-bold text-center">Aún no tienes productos en el carrito</p> -->
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-3">
+                                        <img src="img/caja_carton_01.jpg" class="imag-card-carrito" alt="/">
+                                    </div>
+                                    <div class="col-9">
+                                        <p class="text-2">FORTEC</p>
+                                        <p class="text-1">CAJA PARA ARCHIVOS TIPO BAÚL CON TAPA INTEGRADA</p>
+                                        <p class="text-1 font-weight-bold">$120.00 x 12 piezas</p>
+                                        <p class="text-1 float-right">Subtotal: <span
+                                                class="font-weight-bold">$1,440.00</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item bg-light">
+                                <div class="col-12">
+                                    <p class="titel-2 float-right">Total: <span class="text-red-precio">$1,440.00</span>
+                                    </p>
+                                </div>
+                                <div class="col-12 m-2 mt-5 rounded bac-red">
+                                    <a href="tiendaURGvistaShow.html">
+                                        <p class="text-carrito"> Regresar</p>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#">
+                                        <p class="text-gold text-center">Descararggar Acuse</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------ Modal carrito ------->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Contrato Marco</th>
+                                <th scope="col">ID Producto</th>
+                                <th scope="col">ID Orden</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">PAPELERIA-01-2022-CDMX</th>
+                                <td>2561000014-01</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="separator mb-3"></div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-1">{NOMBRE USUARIO}</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-1 float-right">dd-mmm-aaaa</p>
+                        </div>
+                    </div>
+
+                    <p class="text-1 mt-4"><strong>{ASUNTO DEL MENSAJE}</strong></p>
+
+                    <div class="col-12 bg-light mt-1">
+                        <p class="text-1">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea veritatis, consequatur
+                            perspiciatis minus illum doloribus! Expedita excepturi voluptate et magnam nisi quae
+                            distinctio quidem veniam tempora inventore quod, pariatur saepe.
+                        </p>
+                    </div>
+                    <div class="separator mb-3"></div>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Responde aquí el mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn boton-1">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+
+    <script>
+        function ShowModal() {
+            $('#myModal').modal('show')
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+    
+    var form_ele = '.form';
+
+// make eveything disabled
+var disableFormEdit = function(selector){	
+  $(selector).removeClass('form--enabled').addClass('form--disabled');
+	$(selector + ' input, ' + selector + ' select, ' + selector + ' button').prop('disabled', true);
+}
+
+
+// make eveything enabled
+var enableFormEdit = function(selector){	
+	$(selector + ' input, ' + selector + ' select, ' + selector + ' button ').prop('disabled', false);
+  $(selector).removeClass('form--disabled').addClass('form--enabled');
+}
+
+
+disableFormEdit(form_ele);
+
+
+$('.js-toggleForm').click(function(){
+   // get the status of form
+  var form_status = $(form_ele).hasClass('form--disabled') ? 'disabled' : 'enabled';
+  
+  // check if disabled or enabled
+  switch (form_status){
+    case 'disabled':
+      enableFormEdit(form_ele);
+      $(this).text('undo')
+      break;
+    case 'enabled':
+      disableFormEdit(form_ele);
+      $(this).text('click to edit')
+      break;
+  }
+});
+    </script>
+
+</body>
+
+</html>

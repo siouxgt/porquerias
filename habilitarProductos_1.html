@@ -1,0 +1,762 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Alta de Contratos Marco</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="catalogos_1.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+    <style>
+
+    </style>
+    <script>
+        var $sortable = $('.sortable');
+
+        $sortable.on('click', function () {
+
+            var $this = $(this);
+            var asc = $this.hasClass('asc');
+            var desc = $this.hasClass('desc');
+            $sortable.removeClass('asc').removeClass('desc');
+            if (desc || (!asc && !desc)) {
+                $this.addClass('asc');
+            } else {
+                $this.addClass('desc');
+            }
+
+        });
+    </script>
+</head>
+
+
+<body>
+
+
+    <main>
+        <h1 class="m-2 p-3">Alta Contratos Marco</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="#">Contratos Marco</a></li>
+            </ol>
+        </nav>
+        <div class="separator"></div>
+
+        <div class="container-fluid m-3">
+            <h2 class="display-4 titulo-1 mb-5">{Nombre Contrato}</h2>
+            <div class="row">
+                <!-- Alta Contrato -->
+                <article class="col-12 col-md-4 col-lg-2 mt-3  d-none d-sm-none d-md-block">
+                    <div>
+                        <div class="sombra cuadros">
+                            <div class="card" style="width:100%;">
+                                <ul class="list-group list-group-flush list-unstyled align-middle">
+                                    <li class="text-gold text-center pt-4 border-bottom p-3 bg-white"><strong>Alta
+                                            Contrato</strong></li>
+
+                                    <li class="list-group-item-2 border-bottom">
+                                        <ul class="list-unstyled p-2">
+                                            <li>Del <strong> 09 enero 2023</strong></li>
+                                            <li>Al <strong>13 enero 2023</strong></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item-3 iconosFut p-3 bg-white">
+                                        <a href="#" class="text-leaft"><i class="fa fa-pencil-square-o fa-lg"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="float-right"><span class="material-symbols-outlined "><i
+                                                    class="fa fa-file-pdf-o" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="indicador-count-card-2 text-center">
+                                <span class="material-symbols-outlined text-center">
+                                    check_small
+                                </span>
+                        </div>
+                    </div>
+                </article>
+                <!-- Alta Contrato -->
+                <!-- Creación Expediente -->
+                <article class="col-12 col-md-4 col-lg-2 mt-3  d-none d-sm-none d-md-block">
+                    <div>
+                        <div class="sombra cuadros">
+                            <div class="card" style="width:100%;">
+                                <ul class="list-group list-group-flush list-unstyled align-middle">
+                                    <li class="text-gold text-center pt-4 border-bottom p-3 bg-white"><strong>Creación
+                                            Expediente</strong></li>
+
+                                    <li class="list-group-item-2 border-bottom">
+                                        <ul class="list-unstyled p-2">
+                                            <li>Del <strong> 16 enero 2023</strong></li>
+                                            <li>Al <strong>27 enero 2023</strong></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item-3 iconosFut p-3 bg-white">
+                                        <a href="#" class="text-leaft"><i class="fa fa-pencil-square-o fa-lg"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="float-right"><span class="material-symbols-outlined "><i
+                                                    class="fa fa-file-pdf-o" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="indicador-count-card-2 text-center">
+                                <span class="material-symbols-outlined text-center">
+                                    check_small
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Creación Expediente -->
+                <!-- Grupo Revisor -->
+                <article class="col-12 col-md-4 col-lg-2 mt-3 d-none d-sm-none d-md-block">
+                    <div>
+                        <div class="sombra cuadros">
+                            <div class="card" style="width:100%;">
+                                <ul class="list-group list-group-flush list-unstyled align-middle">
+                                    <li class="text-gold text-center pt-4 bg-white border-bottom p-3"><strong>Grupo
+                                            Revisor</strong></li>
+
+                                    <li class="list-group-item-2 border-bottom bg-white">
+                                        <ul class="list-unstyled p-2">
+                                            <li>Del <strong> 30 enero 2023</strong></li>
+                                            <li>Al <strong>17 febrero 2023</strong></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item-3 iconosFut bg-white p-3 ">
+                                        <a href="#" class="text-leaft"><i class="fa fa-pencil-square-o fa-lg"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="float-right"><span class="material-symbols-outlined "><i
+                                                    class="fa fa-file-pdf-o" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="indicador-count-card-2 text-center">
+                                <span class="material-symbols-outlined text-center">
+                                    check_small
+                                </span>
+                            </p>
+                        </div>
+                </article>
+                <!-- Grupo Revisor -->
+                <!-- Habilitar Proveedores -->
+                <article class="col-12 col-md-4 col-lg-2 mt-3 d-none d-sm-none d-md-block">
+                    <div>
+                        <div class="sombra cuadros">
+                            <div class="card" style="width:100%;">
+                                <ul class="list-group list-group-flush list-unstyled align-middle">
+                                    <li class="text-gold text-center pt-4 bg-white border-bottom p-3"><strong>Habilitar
+                                            Proveedores</strong></li>
+
+                                    <li class="list-group-item-2 border-bottom bg-white">
+                                        <ul class="list-unstyled p-2">
+                                            <li>Del <strong> 20 febrero 2023</strong></li>
+                                            <li>Al <strong>31 marzo 2023</strong></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item-3 iconosFut bg-white p-3 ">
+                                        <a href="#" class="text-leaft"><i class="fa fa-pencil-square-o fa-lg"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="float-right"><span class="material-symbols-outlined "><i
+                                                    class="fa fa-file-pdf-o" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="indicador-count-card-2 text-center">
+                                <span class="material-symbols-outlined text-center">
+                                    check_small
+                                </span>
+                            </p>
+                        </div>
+                </article>
+                <!-- Habilitar Proveedores -->
+                <!-- Habilitar Productoso -->
+                <article class="col-12 col-md-4 col-lg-2 mt-3">
+                    <div>
+                        <div class="cuadros bac-green rounded">
+                            <div class="card" style="width:100%;">
+                                <ul class="list-group list-group-flush list-unstyled align-middle">
+                                    <li class="text-white text-center pt-4 border-bottom p-3"><strong>Habilitar
+                                            Productos</strong></li>
+
+                                    <li class="list-group-item-1 border-bottom">
+                                        <ul class="list-unstyled p-2">
+                                            <li>Del <strong> 03 abril 2023</strong></li>
+                                            <li>Al <strong>26 mayo 2023</strong></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item-3 iconosFut p-3 ">
+                                        <a href="#" class="text-leaft"><i class="fa fa-pencil-square-o fa-lg"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="float-right"><span class="material-symbols-outlined "><i
+                                                    class="fa fa-file-pdf-o" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="indicador-count-card text-center">
+                                <span class="material-symbols-outlined text-center">
+                                    check_small
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!--  Habilitar Productoso -->
+                <!-- Habilitar URGs -->
+                <article class="col-12 col-md-4 col-lg-2 mt-3 d-none d-sm-none d-md-block">
+                    <div>
+                        <div class="sombra cuadros">
+                            <div class="card" style="width:100%;">
+                                <ul class="list-group list-group-flush list-unstyled align-middle">
+                                    <li class="text-gold text-center pt-4 bg-white border-bottom p-3"><strong>Habilitar
+                                            URGs</strong></li>
+
+                                    <li class="list-group-item-2 border-bottom bg-white">
+                                        <ul class="list-unstyled p-2">
+                                            <li>Del <strong> 29 mayo 2023</strong></li>
+                                            <li>Al <strong>30 junio 2023</strong></li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-group-item-3 iconosFut bg-white p-3 ">
+                                        <a href="#" class="text-leaft"><i class="fa fa-pencil-square-o fa-lg"
+                                                aria-hidden="true"></i></a>
+                                        <a href="#" class="float-right"><span class="material-symbols-outlined "><i
+                                                    class="fa fa-file-pdf-o" aria-hidden="true"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <p class="indicador-count-card-2 text-center">
+                                <span class="material-symbols-outlined text-center">
+                                    check_small
+                                </span>
+                            </p>
+                        </div>
+                </article>
+                <!-- Alta Contrato -->
+            </div>
+        </div>
+    </main>
+    <!-- datos generales y anexos -->
+    <div class="container">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                    <h4 class="text-activo">Habilitar producto </h4>
+                </button>
+                <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">
+                    <h4 class="inactivo text-1">Validación de productos</h4>
+                </button>
+            </div>
+        </nav>
+        <div class="tab-content border" id="nav-tabContent">
+            <!-- datos generales -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <h6 class="mx-3 titl-1">1. Habilita Productos</h6>
+                <p class="mx-3">Selecciona los productos para este Contrato Marco.</p>
+                <hr>
+                <!-- <div class="row elemtos">
+                    <div class="col-12 col-lg-3 col-md-3 col-sm-8 p-3 m-2 justify-content-center">
+                        <form>
+                            <input class="form-control" ng-model="searchUserTerm" type="text" placeholder="Buscar..."
+                                aria-label="default input example">
+                        </form>
+                    </div>
+                </div> -->
+                <!-- <div class="row col-md-7 justify-content-start">
+                    <div class="col-md-12">
+                        <h4 class="text_tabla_contador">
+                            <div class="dataTables_length" id="example1_length">
+                                <label>
+                                    Ver
+                                    <select name="example1_length" aria-controls="example1" class="dropdown-table">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                    elementos de <strong>{#total}</strong>
+                                </label>
+                            </div>
+                        </h4>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="col-12 col-lg-3 col-md-3 col-sm-8 p-3 m-2 justify-content-center">
+                            <form>
+                                <input class="form-control" ng-model="searchUserTerm" type="text"
+                                    placeholder="Buscar..." aria-label="default input example">
+                            </form>
+                        </div>
+                        <!-- <div id="tabla_proveedor_filter" class="dataTables_filter">
+                            <label>Buscar:
+                                <input type="search" class="" placeholder="" aria-controls="tabla_proveedor">
+                            </label>
+                        </div> -->
+                    </div>
+                    <div class="col-sm-12 col-md-6 float-right">
+                        <div class="mt-2 float-right mt-5">
+                            <h4 class="text_tabla_contador">
+                                <div class="" id="example1_length">
+                                    <label>
+                                        Ver
+                                        <select name="example1_length" aria-controls="example1" class="dropdown-table">
+                                            <option value="10">10</option>
+                                            <option value="25">25</option>
+                                            <option value="50">50</option>
+                                            <option value="100">100</option>
+                                        </select>
+                                        elementos de <strong>{#total}</strong>
+                                    </label>
+                                </div>
+                            </h4>
+                        </div>
+                        <!-- <div class="dataTables_length float-right" id="tabla_proveedor_length">
+                            <label>Mostrar
+                                <select name="tabla_proveedor_length" aria-controls="tabla_proveedor" class="">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select> registros
+                            </label>
+                        </div>
+                    </div> -->
+                    </div>
+
+                    <table class="table justify-content-md-center ml-3">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="sortable">#</th>
+                                <th scope="col" class="sortable">Clave CABMS</th>
+                                <th scope="col" class="sortable">Descripción clave CABMS</th>
+                                <th scope="col" class="tab-cent">Productos</th>
+                                <th scope="col" class="tab-cent">Ver más</th>
+                                <th scope="col" class="tab-cent">Editar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2111000052</td>
+                                <td>AGENDA</td>
+                                <td class="tab-cent">0</td>
+                                <td class="tab-cent">
+                                    <!--ver+-->
+                                    <a href="productosCatalogos.html" class="verMas"></a>
+                                </td>
+                                <td class="tab-cent">
+                                    <a href="#" class="Editar" data-toggle="modal" data-target="#staticBackdrop"></a>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2111000012</td>
+                                <td>ÁLBUM</td>
+                                <td class="tab-cent">0</td>
+                                <td class="tab-cent">
+                                    <!--ver+-->
+                                    <a href="productosCatalogos.html" class="verMas"></a>
+                                </td>
+                                <td class="tab-cent">
+                                    <a href="#" class="Editar" data-toggle="modal" data-target="#staticBackdrop"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    
+                        <div class="col-md-12 ">
+                            <h4 class="pages float-right">
+                                Elementos por página {1-10} de {10}
+                                <i class="fa fa-angle-left pages" aria-hidden="true"></i>
+                                <i class="fa fa-angle-right pages" aria-hidden="true"></i>
+                            </h4>
+                        </div>
+                    
+
+                </div>
+            </div>
+
+            <!-- Validación de productos -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <section class="">
+                    <div class="row">
+                        <div class=" bg-white col-12 col-md-4">
+                            <div class="border rounded ">
+                                <div class="row m-1">
+                                    <div class="col-12 mb-4 ml-2">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-12 col-md-5">
+                                                <p class="text-activo">Productos</p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="text-2 float-right text-left">Por completar:20</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="border rounded col-12 col-md-12 col-lg-6 mb-3 float-left mt-2">
+                                                <div>
+                                                    <p class="text-2 text-center">Formularios creados</p>
+                                                    <p class="numValida text-center">50</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="border rounded col-12 col-md-12 col-lg-6 mb-3 float-right mt-2">
+                                                <div>
+                                                    <p class="text-2 text-center">Carga de Productos</p>
+                                                    <p class="numValida text-center">30</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" bg-white col-12 col-md-4">
+                            <div class="border rounded">
+                                <div class="row m-1">
+                                    <div class="row m-1">
+
+                                        <div class="col-12">
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-12 col-md-5">
+                                                    <p class="text-activo">Validación</p>
+                                                </div>
+                                                <div class="col-12 col-md-6">
+                                                    <p class="text-2 float-right text-leaft">Por validar:24</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="border rounded col-12 col-md-12 col-lg-4 mb-3  mt-2">
+                                            <div>
+                                                <p class="text-2 text-center">Económica</p>
+                                                <p class="numValida text-center">27</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="border rounded col-12 col-md-12 col-lg-4 mb-3 mt-2">
+                                            <div>
+                                                <p class="text-2 text-center">Administrativa</p>
+                                                <p class="numValida-amarillo text-center">30</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="border rounded col-12 col-md-12 col-lg-4 mb-3 mt-2">
+                                            <div>
+                                                <p class="text-2 text-center">Técnica</p>
+                                                <p class="numValida-rojo text-center">3</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <p class="text-2 float-right">3/10</p>
+                                        </div>
+
+                                    </div>
+              
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=" bg-white col-12 col-md-4">
+                            <div class="border rounded">
+                                <div class="row m-1">
+                                    <div class="col-12 mb-4 m-1 ml-2">
+                                        <div class="row d-flex align-items-center">
+                                            <div class="col-12 col-md-5">
+                                                <p class="text-activo">Aprobación</p>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <p class="text-2 float-right text-left">Por completar:48</p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+
+                                            <div class="border rounded col-12 col-md-12 col-lg-6 mb-3 float-left mt-2">
+                                                <div>
+                                                    <p class="text-2 text-center">Publicados</p>
+                                                    <p class="numValida-rojo text-center">1</p>
+                                                </div>
+
+                                            </div>
+                                            <div class="border rounded col-12 col-md-12 col-lg-6 mb-3 float-right mt-2">
+                                                <div>
+                                                    <p class="text-2 text-center">Rechazados</p>
+                                                    <p class="numValida-rojo text-center">1</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </section>
+                <div class="separator mt-3"></div>
+                <form>
+                    <div class="form-row  mt-3">
+                        <div class="col-12- col-md-3 text-gold mt-2">
+                            <label for="exampleFormControlSelect1">Clave CABMS</label>
+                            <select class="form-control" id="exampleFormControlSelect1" placeholder="Default input">
+                                <option>2111000052</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-4 text-1">
+                            <label for="staticEmail" class="col-form-label mb-1">Descripción de la clave CABMS</label>
+                            <input class="form-control text-1 mb-1" type="text"
+                                placeholder="CAJAS DE CARTÓN (CORRUGADO, LISO Y PLEGADIZO)" readonly>
+                        </div>
+                        <div class="col-12 col-md-2 text-1 mt-2">
+                            <label for="exampleFormControlSelect1">Estatus ficha</label>
+                            <select class="form-control" id="exampleFormControlSelect1" placeholder="Default input">
+                                <option>Activa</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+                <div class="separator m-3"></div>
+                <div class="row mt-3 mx-1">
+                    <p class="text-1 mt-3">Etapa proceso</p>
+                    <div class="botones">
+                        <a class="btn m-2 boton-5 rounded-pill" href="#" role="button">Validación económica</a>
+                        <a class="btn m-2 boton-5 rounded-pill" href="#" role="button">Validación administrativa</a>
+                        <a class="btn m-2 boton-5 rounded-pill" href="#" role="button">Validación técnica</a>
+                        <a class="btn m-2 boton-5 rounded-pill" href="#" role="button">Publicado</a>
+                    </div>
+                </div>
+                <hr>
+                <h2 class="titl-1">CAJAS DE CARTÓN - CAJAS PARA ARCHIVO MUERTO</h2>
+                <div class="row">
+                    <p class="text-left col-5">PRODUCTOCDMX2022-01-2111000052-01</p>
+                    <p class="text-right col-3">Unidad de medida: <strong>PIEZA</strong></p>
+                    <p class="text-right col-2">Ficha: <strong>ACTIVA</strong></p>
+                    <p class="text- col-2">Versión:<strong>1</strong></p>
+                </div>
+                <table class="table justify-content-md-center mt-3">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="sortable">#</th>
+                            <th scope="col" class="sortable">Clave CABMS</th>
+                            <th scope="col" class="sortable">Título del producto</th>
+                            <th scope="col" class="sortable">Etapa proceso</th>
+                            <th scope="col" class="tab-cent">Validar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2111000052</td>
+                            <td>CAJAS PARA ARCHIVOS CON TAPA ABATIBLE</td>
+                            <td>Validación económica</td>
+                            <td class="tab-cent">
+                                <a href="productosCatalogos.html">
+                                    <img src="iconos/valida.svg" alt="/" style="width: 8%;">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        <!-- datos generales y anexos -->
+
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="botones float-right">
+                    <a class="btn m-2 boton-1" href="#" role="button">Continuar</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- footer -->
+
+        <!-- footer -->
+
+        <!----- MODAL ----->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-3">
+
+                                <div class="form-group text-gold col-12">
+                                    <label for="exampleFormControlSelect1">Convocatoria No.</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <hr>
+
+                        <p class="text-1 ml-2">Las cotizaciones duran un mes y el cálculo de PMR cada tres meses.</p>
+
+                        <div class="row">
+                            <form class="ml-2">
+                                <div class="col-12 text-gold">
+                                    <label for="inputPrecio">Precio Máximo (PMR)</label>
+                                </div>
+                                <div class="input-group mb-3 ml-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">.00</span>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                        <form class="ml-2">
+                            <div class="form-group">
+                                <label for="inputFecha col-4 ">Fecha del estudio</label><br>
+                                <input type="date" id="birthday" name="FechaInicio">
+                            </div>
+                        </form>
+                        <div class="row">
+
+                            <form class="form-inline ml-2">
+                                <div class="form-group col-12 col-md-5 text-1">
+                                    <label for="exampleFormControlFile1">Estudio de precios</label>
+                                    <input type="file" class="form-control-file " id="exampleFormControlFile1">
+                                </div>
+                                <div class="form-groupcol-12 col-md-6 text-1">
+                                    <label for="exampleFormControlFile1">Estudio de precios (versión pública)</label>
+                                    <input type="file" class="form-control-file ml-4s" id="exampleFormControlFile1">
+                                </div>
+                            </form>
+                        </div>
+                        <hr>
+                        <p class="text-1 ml-1">Fechas límite para cargar, revisar y liberar los productos de este
+                            Contrato
+                            Marco.</p>
+                        <form class="m-2">
+                            <div class="row">
+                                <div class="col-4 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputFechaCreacion">1. Creación formulario</label><br>
+                                        <input type="date" id="birthday" name="FechaInicio">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputFechaCarga">2. Carga de producto</label><br>
+                                        <input type="date" id="birthday" name="FechaInicio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputFechaValidacion">3. Validación adtva</label><br>
+                                        <input type="date" id="birthday" name="FechaInicio">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputFechaTecnica">4. Validación técnica</label><br>
+                                        <input type="date" id="birthday" name="FechaInicio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 col-md-5">
+                                    <div class="form-group">
+                                        <label for="inputFechaPublicacion">5. Publicación producto</label><br>
+                                        <input type="date" id="birthday" name="FechaInicio">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn boton-1">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----- MODAL  ----->
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover();
+            });
+
+            function ShowModal() {
+                $('#myModal').modal('show')
+            }
+        </script>
+
+</html>

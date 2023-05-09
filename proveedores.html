@@ -1,0 +1,541 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Catálogo Proveedores</title>
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+	<link href="catalogos.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+		rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+	<script>
+		var $sortable = $('.sortable');
+
+		$sortable.on('click', function () {
+
+			var $this = $(this);
+			var asc = $this.hasClass('asc');
+			var desc = $this.hasClass('desc');
+			$sortable.removeClass('asc').removeClass('desc');
+			if (desc || (!asc && !desc)) {
+				$this.addClass('asc');
+			} else {
+				$this.addClass('desc');
+			}
+
+		});
+	</script>
+</head>
+
+
+<body>
+	<header class="top">
+		<div class="row">
+			<div class="logos col-12 col-sm-12 col-lg-6 justify-content-around">
+				<img class="cdmx" src="img/logoSAFtianguis_Mesa de trabajo 1.svg" alt="Logo" />
+			</div>
+			<div class="iconos col-12 col-sm-12 col-lg-6 justify-content-center">
+				<div class="Hd-buscar">
+					<span>
+						<form>
+							<input type="input" class="form__field" placeholder="ID o Contrato" name="name" id="search"
+								required />
+						</form>
+						<img class="Hd-buscar" src="iconos/search_off.svg" alt="" />
+					</span>
+				</div>
+
+				<div class="Hd-alerta">
+					<span>
+						<div class="alerta-mensajes">
+							<ul class="alerta-mensajes">
+								<li><img class="Hd-alerta" src="iconos/alert_on.svg" alt="" />
+
+									<ul>
+										<li class="abre-modal" id="tareas"><i class="fa fa-check-circle alerta-icono "
+												aria-hidden="true"></i>Tareas
+											<span>12</span>
+										</li>
+
+										<li class="abre-modal" id="mensajes"><i class="fa fa-comment alerta-icono"
+												aria-hidden="true"></i>Mensajes<span>3</span>
+										</li>
+									</ul>
+
+								</li>
+							</ul>
+						</div>
+						<p>7</p>
+					</span>
+				</div>
+
+				<div class="dropdown">
+					<span>
+						<h2 class="perfil">DN</h2>
+					</span>
+					<div class="dropdown-content alerta-mensajes">
+						<ul class="id">
+							<li><img src="img/btnFlechaDer_Mesa de trabajo 1.svg" alt="salir" class="abre-modal m-2"
+									style="width:40%"></li>
+							<li><img src="img/id_guinda_Mesa de trabajo 1.svg" alt="ID" class="abre-modal m-2"
+									style="width:40%"></li>
+							<li><img src="img/folderInfo_Mesa de trabajo 1.svg" alt="Info" class="abre-modal m-2"
+									style="width:40%"></li>
+							<li><img src="img/saberMas_Mesa de trabajo 1.svg" alt="Saber más" class="abre-modal m-2"
+									style="width:40%"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center">
+		<div class=" container-fluid">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="nav nav-item"><span class="nav-active"><a href="administrador_inicio.html">Inicio</a></span>
+				</div>
+				<div class="collapse " id="collapseExample">
+				</div>
+				<div class="dropdown">
+					<a href="#" class="underline">Catálogos <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<li class="dropdown">
+							<a href="#" class="dropdown">Proveedores
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown">Productos
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="urgs.html" class="dropdown">URGs
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown">Validación técnica
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="nav nav-item"><a href="#" class="underline">Convenio Marco</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Órdenes de Compra</a></div>
+				<div class="nav nav-item"><a href="#" class="underline">Permisos</a></div>
+				<div class="dropdown">
+					<a href="#" class="underline">Reportes <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<li class="dropdown">
+							<a href="#" class="dropdown">Histórico de precios
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown nav-item">
+							<a href="#" class="dropdown">Reportes
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+					</div>
+				</div>
+				<div class="dropdown nav-item">
+					<a href="#" class="underline">Recursos <i class="fa fa-angle-down nav" aria-hidden="true"></i></a>
+					<div class="dropdown-content">
+						<li class="dropdown">
+							<a href="#" class="dropdown">Perfil
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown">Centro de ayuda
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown">Documentos
+								<div style="float: right"><i class="fa fa-angle-right dropdown" aria-hidden="true"></i>
+								</div>
+							</a>
+						</li>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<h1 class="m-2 p-3">Proveedores</h1>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Proveedores</li>
+			</ol>
+		</nav>
+		<div class="separator"></div>
+		<div class="row elemtos justify-content-around">
+			<div class="col-12 col-lg-3 col-md-3 col-sm-8 p-3 m-2 justify-content-center">
+				<form>
+					<input class="form-control" ng-model="searchUserTerm" type="text" placeholder="Buscar..."
+						aria-label="default input example">
+				</form>
+			</div>
+			<!--Se cambiaron las columnas-->
+			<div class="col-12 col-md-3 p-3 m-2 justify-content-center">
+				<button type="button" class="btn btn-white boton-1 boton-add btn-block col-lg-5 col-md-8 p-1" data-toggle="modal"
+					data-target="#staticBackdrop">
+					<span>Agregar RFC</span>
+				</button>
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="row col-md-7 justify-content-start">
+				<div class="col-md-12">
+					<h4 class="text_tabla_contador"> 
+						<div class="dataTables_length" id="example1_length">
+							<label>
+								Ver 
+								<select name="example1_length" aria-controls="example1" class="dropdown-table">
+									<option value="10">10</option>
+									<option value="25">25</option>
+									<option value="50">50</option>
+									<option value="100">100</option>
+								</select>
+								elementos de <strong>{#total}</strong>
+							</label>
+						</div>
+					</h4>
+				</div>
+			</div>
+
+			<table class="table justify-content-md-center">
+				<thead>
+					<tr>
+						<th scope="col" class="sortable">#</th>
+						<th scope="col" class="sortable">Folio Padrón Proveedores</th>
+						<th scope="col" class="sortable">
+							RFC
+						</th>
+						<th scope="col" class="tab-cent">Estatus</th>
+						<th scope="col" class="tab-cent">Ver más</th>
+						<th scope="col" class="tab-cent">Editar</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>NI3ZA12-GA98RCI</td>
+						<td>GAMN0008074V5</td>
+						<td class="tab-cent">Activo</td>
+						<td class="tab-cent">
+							<!--ver+-->
+							<a href="proveedoresVerMas.html" class="verMas"></a>
+						</td>
+						<td class="tab-cent">
+							<a href="#" data-toggle="modal" data-target="#staticBackdrop" class="Editar"></a>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>NI3ZA12-GA98RCI</td>
+						<td>GAMN0008074V5</td>
+						<td class="tab-cent">Activo</td>
+						<td class="tab-cent">
+							<!--ver+-->
+							<a href="proveedoresVerMas.html" class="verMas"></a>
+						</td>
+						<td class="tab-cent">
+							<a href="#" data-toggle="modal" data-target="#staticBackdrop" class="Editar"></a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="row col-md-7 justify-content-lg-end right">
+				<div class="col-md-6">
+					<h4 class="pages">
+						Elementos por página {1-10} de {10}
+						<i class="fa fa-angle-left pages" aria-hidden="true"></i>
+						<i class="fa fa-angle-right pages" aria-hidden="true"></i>
+					</h4>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+	<!-- footer -->
+	<footer>
+		<!-- Footer -->
+		<div class="container-fluid ft-leyenda">
+			<div class="row">
+				<ul class="ft-leyenda-list text-decoration-none">
+					<li>
+						<img src="images/lg_cdmx_footer.svg" alt="" />
+					</li>
+					<li>
+						Diseñado y operado por la Secretaría de Administración y Finanzas
+						<br>
+						Cualquier duda y/o problema relacionado con el sitio, favor de contactarnos a través de <a
+							href="mailto:name@email.com">mesadeservicio@finanzas.cdmx.gob.mx</a>
+						<br>
+						Se brindará atención telefónica de Lunes a Viernes en el teléfono <strong>(55) 5723 6505 ext.
+							5026,
+							5004, 5070</strong>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<!-- Footer legal -->
+		<div class="container-fluid ft-legal">
+			<div class="row">
+				<ul class="ft-legal-list text-decoration-none">
+					<li><a href="#">Términos y condiciones</a></li>
+					<li><a href="#">Política de privacidad</a></li>
+					<li>2022 Gobierno de la CDMX</li>
+				</ul>
+			</div>
+		</div>
+
+	</footer>
+	<!-- footer -->
+
+
+	<!----- MODAL Proveedores ----->
+	<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+		aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="staticBackdropLabel"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container">
+						<div class="row align-items-center justify-content-center">
+							<div class="col-12 col-sm-4">
+								<div class="form-group rfc-1">
+									<label for="formGroupExampleInput">RFC</label>
+									<input type="text" class="form-control" id="formGroupExampleInput"
+										placeholder="Escribe tu RFC">
+								</div>
+							</div>
+							<div class="col-12 col-sm-4">
+								<div class="form-group">
+									<label for="disabledTextInput">Folio Padrón Proveedores </label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+							<div class="col-12 col-sm-4 text-align-center">
+								<div class="form-group switch-right">
+									<label for="formGroupExampleInput">Activo</label>
+									<div class="custom-control custom-switch">
+										<label class="switch">
+											<input type="checkbox" checked>
+											<span class="slider round"></span>
+										</label>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12">
+								<div class="form-group">
+									<label for="formGroupExampleInput">Nombre</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="disabledTextInput">Persona</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="disabledTextInput">Nacionalidad</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="disabledTextInput">MIPYME</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6">
+								<div class="form-group">
+									<label for="disabledTextInput">Tipo de PYME</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-12 col-sm-12">
+								<div class="form-group">
+									<label for="formGroupExampleInput">Representante legal</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-12">
+								<div class="form-group">
+									<label for="formGroupExampleInput">Domicilio</label>
+									<input class="form-control" type="text" placeholder="Readonly input here..."
+										readonly>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-3 col-sm-3">
+								<div class="form-group">
+									<label for="disabledTextInput">Número fíjo</label>
+									<input class="form-control" type="text" placeholder="55-55..." readonly>
+								</div>
+							</div>
+							<div class="col-3 col-sm-3">
+								<div class="form-group">
+									<label for="disabledTextInput">Extensión</label>
+									<input class="form-control" type="text" placeholder="452..." readonly>
+								</div>
+							</div>
+							<div class="col-3 col-sm-3">
+								<div class="form-group">
+									<label for="disabledTextInput">Número celular</label>
+									<input class="form-control" type="text" placeholder="55 55..." readonly>
+								</div>
+							</div>
+							<div class="col-3 col-sm-3">
+								<div class="form-group">
+									<label for="disabledTextInput">Correo electrónico</label>
+									<input class="form-control" type="text" placeholder="@..." readonly>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn boton-1">Guardar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----- MODAL Proveedores ----->
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('#example1').DataTable();
+			$('#example2').DataTable();
+			$('#example3').DataTable();
+
+			$('#tareas').on('click', function () {
+				$('#exampleModal').modal('show');
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example1-div").css('display', 'block');
+
+			});
+
+			$('#alertas').on('click', function () {
+				$('#exampleModal').modal('show');
+				$("#example1-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example2-div").css('display', 'block');
+
+			});
+			$('#mensajes').on('click', function () {
+				$('#exampleModal').modal('show');
+				$("#example1-div").css('display', 'none');
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'block');
+
+			});
+
+			$('#tareas-modal').on('click', function () {
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example1-div").css('display', 'block');
+
+			});
+
+			$('#alertas-modal').on('click', function () {
+
+				$('#exampleModal').modal('show');
+				$("#example1-div").css('display', 'none');
+				$("#example3-div").css('display', 'none');
+				$("#example2-div").css('display', 'block');
+
+			});
+			$('#mensajes-modal').on('click', function () {
+				$("#example1-div").css('display', 'none');
+				$("#example2-div").css('display', 'none');
+				$("#example3-div").css('display', 'block');
+
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>

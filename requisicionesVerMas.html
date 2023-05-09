@@ -1,0 +1,729 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Requisiciones Ver Más</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="catalogos_1.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+
+
+<body>
+    <header>
+        <div class="row my-2 px-3">
+          <div class="col-sm-12 col-md-7">
+            <nav class="navbar navbar-light badge-white">
+              <a class="navbar-brand" href="#">
+                <img src="img/logoSAFtianguis_Mesa de trabajo 1.svg" style="width: 100%;"
+                  alt="Logotipo Secretaria de Finanzas">
+              </a>
+            </nav>
+          </div>
+    
+          <div class="col-md-5 col-sm-12 d-flex align-items-center">
+    
+            <div class="col-sm-3 col-md-3 d-flex align-items-center justify-content-center border-right">
+                    <a href=" #"><i class="fa-solid fa-bell iconoHeader sombra text-center"></i></a>
+              <span class="badge badge-white badge-gris ml-3">0</span>
+            </div>
+    
+            <!-- <div class="col-1 vl-3 text-center"></div> -->
+    
+            <div class="col-sm-3 col-md-3 text-center border-right">
+              <a href="#">
+                <i class="fa-solid fa-user iconoHeader sombra"></i>
+              </a>
+            </div>
+    
+            <!-- <div class="col-1 vl-3 text-center"></div> -->
+    
+            <div class="col-sm-3 col-md-3 text-center border-right">
+              <a href="#"><i class="fa-solid fa-heart car-red"></i></a>
+            </div>
+    
+            <!-- <div class="col-1 vl-3 text-center"></div> -->
+    
+            <div class="col-sm-3 col-md-3 d-flex align-items-center">
+              <button class="btn btn-white" type="button" data-toggle="collapse" data-target="#multiCollapseExample2"
+                aria-expanded="false" aria-controls="multiCollapseExample2" style="background-color: #fff;">
+                <i class="fa-solid fa-cart-shopping car-red"></i>
+              </button>
+              <span class="badge badge-pill badge-light border badge-red ml-3">10</span>
+            </div>
+    
+          </div>
+    
+        </div>
+      </header>
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="nav nav-item"><a href="#" class="nav-active underline">Inicio</a></div>
+            <div class="nav nav-item">
+              <a href="#" class="underline">Requisiciones</a>
+            </div>
+            <div class="nav nav-item dropdown" style="top: -6px;">
+              <a href="#" class="underline">Contrato Marco<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <div class="dropdown-content" style="height: auto; width: 200px;">
+    
+                <li class="dropdown col-autp" style="height: auto; height: auto;">
+                  <a href="#" class="dropdown underline">Equipo de cómputo
+                    <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                  </a>
+                </li>
+                <li class="dropdown nav-item " style="height: auto;">
+                  <a href="#" class="dropdown underline">Material de limpieza
+                    <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown nav-item " style="height: auto;">
+                  <a href="#" class="dropdown underline">Papeleria
+                    <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+                <!-- <li class="nav-item dropdown ">
+                  <a class="nav-link  dropdown bg-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Papelería
+                    <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                  <div class="dropdown-menu dropright" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item text-2" href="#">2111000006 - Agendas</a>
+                    <a class="dropdown-item text-2" href="#">2111000052 - Cajas de cartón (corrugado, liso
+                      y...</a>
+                    <a class="dropdown-item text-2" href="#">2561000014 - Cajas de plástico</a>
+                  </div>
+                </li> -->
+    
+                <li class="dropdown nav-item " style="height: auto;">
+                  <a href="#" class="dropdown underline">Telefonía celular
+                    <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+                <li class="dropdown nav-item" style="height: auto;">
+                  <a href="#" class="dropdown underline">Vestuario y uniformes
+                    <div class="float-right"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </a>
+                </li>
+              </div>
+            </div>
+            <div class="nav nav-item"><a href="#" class="underline">Subasta</a></div>
+            <div class="nav nav-item"><a href="#" class="underline">Órdenes de compra</a></div>
+            <div class="nav nav-item"><a href="#" class="underline">Reportes</a></div>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+        <div class="row">
+            <div class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
+                <a href="#" class="text-gold ml-5"><i class="fa-solid fa-arrow-left text-gold ml-1"></i> Regresar</a>
+                <a class="nav-item nav-link active ml-3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                    aria-controls="nav-home" aria-selected="true">Requisición</a>
+            </div>
+            </nav>
+            <div class="tab-content col-12" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="container mt-3">
+                        <div class="row elemtos justify-content-end mb-3">
+                            <div class="col-12 col-md-4 mt-2 d-flex justify-content-end mb-3">
+
+                                <select class="form-control col-3 text-1">
+                                    <option>PDF</option>
+                                    <option>XLS</option>
+                                </select>
+
+                                <button type="button" class="btn bg-white ml-2 text-gold border">Exportar</button>
+                            </div>
+
+                        </div>
+
+                        <div class="justify-content-center">
+                            <div class="row mt-3">
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">ID Requisición</p>
+                                </div>
+                                <div class="col-9 col-md-10 border">
+                                    <p class="text-1">1920</p>
+                                </div>
+    
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Objeto de requisición</p>
+                                </div>
+                                <div class="col-9 col-md-10 border ">
+                                    <p class="text-1">Adquisición de papelería para festival</p>
+                                </div>
+    
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Fecha autorización</p>
+                                </div>
+                                <div class="col-9 col-md-10 border ">
+                                    <p class="text-1">dd-mm-aaaa</p>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Monto autorizado</p>
+                                </div>
+                                <div class="col-9 col-md-10 border">
+                                    <p class="text-1"><strong>$26,680</strong></p>
+                                </div>
+    
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Monto por confirmar</p>
+                                </div>
+                                <div class="col-9 col-md-10 border">
+                                    <p class="text-1"><strong>$-</strong></p>
+                                </div>
+    
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Monto adjudicado</p>
+                                </div>
+                                <div class="col-9 col-md-10 border">
+                                    <p class="text-1"><strong>$-</strong></p>
+                                </div>
+    
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Monto pagado</p>
+                                </div>
+                                <div class="col-9 col-md-10 border">
+                                    <p class="text-1"><strong>$-</strong></p>
+                                </div>
+    
+                                <div class="col-3 col-md-2 bg-light border">
+                                    <p class="text-1">Monto disponible</p>
+                                </div>
+                                <div class="col-9 col-md-10 border">
+                                    <p class="text-recha"><strong>$26,680</strong></p>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Claves presupuestarias </p>
+                                </div>
+                                <div class="col-8 col-md-4 border">
+                                    <p class="text-1">109C001124003P00111112021711101</p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Partida presupuestal </p>
+                                </div>
+                                <div class="col-8 col-md-1 border">
+                                    <p class="text-1">2171</p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Valor estimado </p>
+                                </div>
+                                <div class="col-md-1 col-8 border">
+                                    <p class="text-1 text-right">$10,000</p>
+                                </div>
+                            
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Claves presupuestarias </p>
+                                </div>
+                                <div class="col-8 col-md-4 border ">
+                                    <p class="text-1">109C001124003P00111112021711102</p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Partida presupuestal</p>
+                                </div>
+                                <div class="col-8 col-md-1 border">
+                                    <p class="text-1">2172</p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Valor estimado</p>
+                                </div>
+                                <div class="col-md-1 col-8 border">
+                                    <p class="text-1 text-right">$5,000</p>
+                                </div>
+
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Claves presupuestarias </p>
+                                </div>
+                                <div class="col-8 col-md-4 border ">
+                                    <p class="text-1">109C001124003P00111112021711103</p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Partida presupuestal</p>
+                                </div>
+                                <div class="col-8 col-md-1 border ">
+                                    <p class="text-1">2173</p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Valor estimado</p>
+                                </div>
+                                <div class="col-md-1 col-8 border">
+                                    <p class="text-1 text-right">$8,000</p>
+                                </div>
+                            </div>
+
+                            <div class="row mt-3">
+                                <div class="col-4 col-md-2 col-md-2">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-8 col-md-4">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-4 col-md-2 col-md-1">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-8 col-md-1 mt-3">
+                                    <p class="text-1"> </p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">Subtotal</p>
+                                </div>
+                                <div class="col-md-1 col-8 border">
+                                    <p class="text-1 text-right">$23,000</p>
+                                </div>
+    
+                                <div class="col-4 col-md-2">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-8 col-md-4">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-8 col-md-1">
+                                    <p class="text-1"> </p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1">IVA</p>
+                                </div>
+                                <div class="col-md-1 col-8 border ">
+                                    <p class="text-1 text-right">$3,680</p>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-8 col-md-4">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-4 col-md-2">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-8 col-md-1">
+                                    <p class="text-1"></p>
+                                </div>
+                                <div class="col-4 col-md-2 bg-light border">
+                                    <p class="text-1"><strong>Total</strong></p>
+                                </div>
+                                <div class="col-md-1 col-8 border">
+                                    <p class="text-1 text-right"><strong>$26,680</strong></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+
+            <div class="col-12 col-md-6 ml-5">
+                <form class="col-4">
+                    <input class="form-control" ng-model="searchUserTerm" type="text" placeholder="Buscar..."
+                        aria-label="default input example">
+                </form>
+            </div>
+            <p class="col-12 col-md-6 ml-4 mt-3 text-1">
+                <strong class="ml-3">Los bienes y servicios disponibles de esta requisición para Contrato Marco
+                    son:</strong>
+            </p>
+            <div class="form-check ml-4 mt-3" style="padding-left: 23px;">
+                <label class="form-check-label text-1 ml-2" for="defaultCheck1">
+                    Seleccionar todas las claves CABMS
+                </label>
+                <input class="form-check-input ml-2" type="checkbox" value="" id="defaultCheck1">
+              </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-12 tabla mt-4" style="min-width: 1300px;">
+                    <table class="table table-responsive table-fixed rounded ">
+
+                        <thead class="bg-light">
+                            <tr>
+                                <th class="col-1 col-sm-1">#</th>
+                                <th class="col-1 col-sm-1">CABMSCDMX</th>
+                                <th class="col-1 col-sm-1">Bien y/o servicio</th>
+                                <th class="col-1 col-sm-1">Especificación</th>
+                                <th class="col-1 col-sm-1 tab-cent"></th>
+                                <th class="col-1 col-sm-1 tab-cent">Unidad de medida</th>
+                                <th class="col-1 col-sm-1">Cantidad</th>
+                                <th class="col-1 col-sm-1 tab-cent">Cotizar</th>
+                                <th class="col-1 col-sm-1 tab-cent">PMR</th>
+                                <th class="col-1 col-sm-1 tab-cent">Subtotal PMR</th>
+                                <th class="col-1 col-sm-1 tab-cent">IVA PMR</th>
+                                <th class="col-1 col-sm-1 tab-cent">Total PMR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-1 text-1 col-sm-1" >1</td>
+                                <td class="col-1 text-1 col-sm-1">2111000006</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS</td>
+                                <td class="col-1 text-1 col-sm-1" >AGENDAS 2022 PARA USO EJECU...</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><a href="#"><i
+                                            class="fa-solid fa-circle-plus gold"></i></a></td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent">Pieza</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">23</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><input type="checkbox"
+                                        class="form-check-input ml-4" id="exampleCheck1"></td>
+                                <td class="col-1 text-1 col-sm-1 text-right">$300</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$6,900</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$1,104</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$8,004</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-1 text-1 col-sm-1">2</td>
+                                <td class="col-1 text-1 col-sm-1">2111000006</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS 2022 PARA USO EJECU...</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><a href="#"><i
+                                            class="fa-solid fa-circle-plus gold"></i></a></td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent">Pieza</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">23</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><input type="checkbox"
+                                        class="form-check-input bac-green ml-4" id="exampleCheck1"></td>
+                                <td class="col-1 text-1 col-sm-1 text-right">$300</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$6,900</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$1,104</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$8,004</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="col-1 text-1 col-sm-1">3</td>
+                                <td class="col-1 text-1 col-sm-1">2111000006</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS</td>
+                                <td class="col-1 text-1 col-sm-1" >AGENDAS 2022 PARA USO EJECU...</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><a href="#"><i
+                                            class="fa-solid fa-circle-plus gold"></i></a></td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent">Pieza</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">23</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><input type="checkbox"
+                                        class="form-check-input bac-green ml-4" id="exampleCheck1"></td>
+                                <td class="col-1 text-1 col-sm-1 text-right">$300</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$6,900</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$1,104</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$8,004</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-1 text-1 col-sm-1">4</td>
+                                <td class="col-1 text-1 col-sm-1">2111000006</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS</td>
+                                <td class="col-1 text-1 col-sm-1" >AGENDAS 2022 PARA USO EJECU...</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><a href="#"><i
+                                            class="fa-solid fa-circle-plus gold"></i></a></td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent">Pieza</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">23</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent custom-control form-control-lg custom-checkbox"><input type="checkbox"
+                                        class="form-check-input bac-green ml-4" id="exampleCheck1"></td>
+                                <td class="col-1 text-1 col-sm-1 text-right">$300</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$6,900</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$1,104</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$8,004</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-1 text-1 col-sm-1">5</td>
+                                <td class="col-1 text-1 col-sm-1">2111000006</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS</td>
+                                <td class="col-1 text-1 col-sm-1" >AGENDAS 2022 PARA USO EJECU...</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><a href="#"><i
+                                            class="fa-solid fa-circle-plus gold"></i></a></td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent">Pieza</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">23</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><input type="checkbox"
+                                        class="form-check-input bac-green ml-4" id="exampleCheck1"></td>
+                                <td class="col-1 text-1 col-sm-1 text-right">$300</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$6,900</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$1,104</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$8,004</td>
+                            </tr>
+
+                            <tr>
+                                <td class="col-1 text-1 col-sm-1">6</td>
+                                <td class="col-1 text-1 col-sm-1">2111000006</td>
+                                <td class="col-1 text-1 col-sm-1">AGENDAS</td>
+                                <td class="col-1 text-1 col-sm-1" >AGENDAS 2022 PARA USO EJECU...</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><a href="#"><i
+                                            class="fa-solid fa-circle-plus gold"></i></a></td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent">Pieza</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">23</td>
+                                <td class="col-1 text-1 col-sm-1 tab-cent"><input type="checkbox"
+                                        class="form-check-input bac-green ml-4" id="exampleCheck1"></td>
+                                <td class="col-1 text-1 col-sm-1 text-right">$300</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$6,900</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$1,104</td>
+                                <td class="col-1 text-1 col-sm-1 bg-light text-right">$8,004</td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr class="mr-3">
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1 text-right bg-light"><p class="font-weight-bold">55</p></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1"></td>
+                                <td class="col-1 col-sm-1 text-right bg-light"><p class="font-weight-bold">$12,300</p></td>
+                                <td class="col-1 col-sm-1 text-right bg-light"><p class="font-weight-bold">$1,968</p></td>
+                                <td class="col-1 col-sm-1 text-right bg-light"><p class="font-weight-bold">$14,268</p></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <!-- <table class="table  ml-5">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col" class="tab-cent">CABMSCDMX</th>
+                                <th scope="col">Bien y/o servicio</th>
+                                <th scope="col">Especificación</th>
+                                <th scope="col" class=" tab-cent">Unidad de medida</th>
+                                <th scope="col" class=" tab-cent">Cantidad</th>
+                                <th scope="col" class=" tab-cent">Cotizar</th>
+                                <th scope="col" class="tab-cent">PMR</th>
+                                <th scope="col" class="tab-cent">Subtotal PMR</th>
+                                <th scope="col" class="tab-cent">IVA PMR</th>
+                                <th scope="col" class="tab-cent">Total PMR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="text-center">2111000006</td>
+                                <td>AGENDAS</td>
+                                <td>AGENDAS 2022 PARA USO EJECU...
+                                    <a href="#"><i class="fa-solid fa-circle-plus text-gold ml-3"></i></a>
+                                </td>
+                                <td class="text-center">Pieza</td>
+                                <td class="text-right bg-light">23</td>
+                                <td class="tab-cent">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                    </div>
+                                </td>
+                                <td class="tab-cent"></td>
+                                <td class="tab-cent bg-light"></td>
+                                <td class="tab-cent"></td>
+                                <td class="tab-cent bg-light"></td>
+                            </tr>
+    
+                            <tr>
+                                <td>1</td>
+                                <td class="text-center">2111000006</td>
+                                <td>AGENDAS</td>
+                                <td>AGENDAS 2022 PARA USO EJECU...
+                                    <a href="#"><i class="fa-solid fa-circle-plus text-gold ml-3"></i></a>
+                                </td>
+                                <td class="text-center">Pieza</td>
+                                <td class="text-right bg-light">23</td>
+                                <td class="tab-cent">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                            value="option1">
+                                    </div>
+                                </td>
+                                <td class="text-right">$180</td>
+                                <td class="text-right bg-light">$3,600</td>
+                                <td class="text-right ">$576</td>
+                                <td class="text-right bg-light">$4,176</td>
+                            </tr>
+    
+                        <tfoot>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-right bg-light font-weight-bold">55</td>
+                                <td></td>
+                                <td></td>
+                                <td class="text-right bg-light font-weight-bold">$12,300</td>
+                                <td class="text-right font-weight-bold">$1,968</td>
+                                <td class="text-right bg-light font-weight-bold">$14,268</td>
+                            </tr>
+                        </tfoot>
+                        </tbody>
+                    </table> -->
+                    <div class="separator mb-3 ml-5 mt-4"></div>
+                    <div class="row elemtos ">
+                        <div class="col-12 mt-2 d-flex justify-content-end mb-3">
+                            <button type="button" class="btn bg-white text-9 border font-weight-bold">Cotizar</button>
+                            <button type="button" class="btn boton-2 ml-2 border">Buscar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>    
+    </main>
+
+
+    <!-- footer -->
+    <!-- <footer class="col align-self-end">
+
+        <div class="row d-flex align-self-end">
+            <div class="container-fluid ft-leyenda">
+                <div class="row">
+                    <ul class="ft-leyenda-list text-decoration-none">
+                        <li>
+                            <img src="images/lg_cdmx_footer.svg" alt="" />
+                        </li>
+                        <li>
+                            Diseñado y operado por la Secretaría de Administración y Finanzas
+                            <br>
+                            Cualquier duda y/o problema relacionado con el sitio, favor de contactarnos a través de <a
+                                href="mailto:name@email.com">mesadeservicio@finanzas.cdmx.gob.mx</a>
+                            <br>
+                            Se brindará atención telefónica de Lunes a Viernes en el teléfono <strong>(55) 5723 6505
+                                ext. 5026,
+                                5004, 5070</strong>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+            <div class="container-fluid ft-legal">
+                <div class="row">
+                    <ul class="ft-legal-list text-decoration-none">
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li>2022 Gobierno de la CDMX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer> -->
+    <!-- footer -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Contrato Marco</th>
+                                <th scope="col">ID Producto</th>
+                                <th scope="col">ID Orden</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">PAPELERIA-01-2022-CDMX</th>
+                                <td>2561000014-01</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="separator mb-3"></div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p class="text-1">{NOMBRE USUARIO}</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="text-1 float-right">dd-mmm-aaaa</p>
+                        </div>
+                    </div>
+
+                    <p class="text-1 mt-4"><strong>{ASUNTO DEL MENSAJE}</strong></p>
+
+                    <div class="col-12 bg-light mt-1">
+                        <p class="text-1">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea veritatis, consequatur
+                            perspiciatis minus illum doloribus! Expedita excepturi voluptate et magnam nisi quae
+                            distinctio quidem veniam tempora inventore quod, pariatur saepe.
+                        </p>
+                    </div>
+                    <div class="separator mb-3"></div>
+
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Responde aquí el mensaje</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn boton-1">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+
+
+    <script>
+        function ShowModal() {
+            $('#myModal').modal('show')
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+
+</html>
